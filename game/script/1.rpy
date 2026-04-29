@@ -37,6 +37,8 @@ label prologue:
     thought "Okay. Deep breath. It's probably just the morning light."
     thought "Everything is fine. Today is a normal day."
     thought "...Right?"
+    hide sooneutralquiet
+    scene black
 
     scene bg hallway at bg_fit with dissolve
 
@@ -53,46 +55,43 @@ label prologue:
     thought "I've never seen her before in my life."
     thought "Why is she standing in front of my door like she lives here?"
     thought "Was I staring? I was definitely staring."
+    show sarasmiletalk at center_char
     sara "Soo-ah, we're going to be late."
     sara "Let's go."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     thought "Oh no. Her voice is pretty too."
     thought "Of course it is."
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "Let's go~"
-    show sooneutraltalk at center_char with dissolve
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "Okay!"
     thought "WHY DID I JUST SAY OKAY."
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
     soo "WAIT A MINUTE!"
+    hide sarasmilequiet
     show saraneutraltalk at center_char
     sara "Yes?"
     hide saraneutraltalk
     show sarasmilequiet at center_char
-    show sooneutraltalk at center_char
     soo "Who are you and why are we going to school together?!"
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
     thought "Sara Lee. That's what she said her name was."
     thought "I have never heard that name in my entire 14 years of life."
+    hide sarasmilequiet
     show saraneutraltalk at center_char
     sara "I get it... I understand what you're trying to say, but..."
     sara "Let's just get to school first, okay?"
-    hide saraneutraltalk
-    show sarasmilequiet at center_char
-    show sooneutraltalk at center_char
     soo "Wait, what do you mean you understand—"
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
     thought "She made a face. A sad, delicate, heartbroken face."
-    thought "The kind of face that only exists in fiction."
+    hide saraneutraltalk
     show saradisturbed at center_char
     soo "O... Okay. Fine. Let's just go."
     thought "I am going to regret this."
     thought "I already regret this."
+    hide saradisturbed
 
     scene bg school at bg_fit with dissolve
-    hide soo
-    hide sara
 
     thought "..."
     thought "This is my school."
@@ -105,17 +104,14 @@ label prologue:
     thought "Every angle is dramatic. Every window catches the light perfectly."
     thought "This is MY school. But it looks like the establishing shot of a romance manhwa."
 
-    show saraneutraltalk at center_char with dissolve
+    show saraneutraltalk at center_char
     sara "Soo-ah, what's wrong? You've gone pale."
     hide saraneutraltalk
-    show sarasmilequiet at center_char
+    show saraneutralquiet at center_char
 
-    show sooneutraltalk at center_char with dissolve
     soo "..."
     soo "Sara. Does this school look... normal to you?"
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
-
+    hide saraneutralquiet
     show saraneutraltalk at center_char
     sara "What do you mean? It looks the same as always."
     hide saraneutraltalk
@@ -126,61 +122,52 @@ label prologue:
     thought "My life has started to look exactly like the first chapter of a web novel."
     thought "And I, Soo-ah, am apparently the main character."
     thought "Great. Fantastic. Love that for me."
-
-    show sooneutraltalk at center_char
     soo "You know what, never mind. Let's just go in."
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
+    sara "Okay~"
+    hide sarasmiletalk
+    show sarasmilequiet
     thought "I have common sense. I am a rational person."
     thought "I will walk into this suspiciously beautiful school and have a completely normal day."
-
-    hide soo with dissolve
-    hide sara with dissolve
-
     thought "I spoke too soon."
+    hide sarasmilequiet
+
+    show bg floor
 
     "A sketchbook landed on the ground right in front of me."
     "Pages fanned open. Pencil sketches scattered across the courtyard."
 
     thought "Huh?"
-    thought "Where did that even come from?"
 
-    "I looked up."
-
-    thought "...A guy was sitting in the cherry blossom tree."
-    thought "Of course there was."
-    thought "He was just... sitting there. In a tree. Sketching."
-    thought "Like that was a completely normal thing to do on the first day of school."
-
-    show sooneutraltalk at center_char with dissolve
+    show jihoquiet at center_char
     soo "H-hey! You dropped your—"
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
-
-    thought "He looked down at me."
     thought "Blue eyes."
     thought "Actual, real, blue eyes."
     thought "Is he Korean? He looks half Korean maybe?"
     thought "Why do people like this keep appearing in front of me today?!"
 
+    hide jihoquiet
+    show jihotalking at center_char
+
     "..."
     "You're picking that up, right?"
 
+    hide jihotalking
+    show jihoquiet at center_char
+
     thought "W-wow. His voice..."
     thought "Okay I need to stop noticing people's voices."
-
-    show sooneutraltalk at center_char
     soo "S-sorry! Yes! I've got it!"
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
-
     thought "I picked up the sketchbook."
     thought "And then I made the mistake of glancing at the open page."
     thought "It was a drawing."
-    thought "A drawing of... this courtyard. The gates. The cherry blossoms."
-    thought "And in the middle of the page — a girl with her back turned."
+    thought "A girl with her back turned."
     thought "I couldn't see her face."
     thought "But she was wearing my uniform."
+
+    hide jihoquiet
+    show npcquiet at center_char
 
     "Hey! Did you see that just now?"
     "Oh my god, she touched Ji-Ho's sketchbook!"
@@ -189,20 +176,32 @@ label prologue:
     thought "?!"
     thought "I just PICKED IT UP OFF THE GROUND—"
 
+    hide npcquiet
+    show npctalking at center_char
+
     "YOU! Don't move!!"
+
+    hide npctalking
+    show npcquiet at center_char
 
     thought "Me?! I'm being yelled at?!"
 
+    hide npcquiet
+    show npctalking at center_char
+
     "You touched Ji-Ho's things without permission."
     "Do you know what that means?"
+
+    hide npc talking
+    show sooneutralquiet at center_char
 
     thought "IT MEANS I WAS BEING HELPFUL."
     thought "IT MEANS I HAVE BASIC HUMAN DECENCY."
     thought "THIS IS UNBELIEVABLE."
     thought "Wait."
     thought "Wait wait wait."
-    thought "A handsome mysterious boy. Sitting in a tree. Sketching."
-    thought "A drawing of a girl in the courtyard — possibly me."
+    thought "A handsome mysterious boy."
+    thought "A drawing of a girl in the courtyard."
     thought "Fangirls ready to tear me apart on day one."
     thought "..."
     thought "This is a web novel."
@@ -211,12 +210,16 @@ label prologue:
     thought "His fans immediately declare war on her."
     thought "And then her suffering begins."
 
+    hide sooneutralquiet
     show sooneutraltalk at center_char with dissolve
     soo "PFFT—!!"
     hide sooneutraltalk
-    show sooneutralquiet at center_char
+    show npctalking at center_char
 
     "Did you just... laugh?"
+
+    hide npctalking
+    show sooneutralquiet at center_char
 
     thought "RUN."
     thought "I need to RUN."
