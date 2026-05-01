@@ -383,6 +383,24 @@ screen say(who, what):
         if not renpy.variant("small"):
             add SideImage() xalign 0.0 yalign 1.0
 
+    textbutton "✿ skip":
+        action Skip()
+        xalign 0.98
+        yalign 0.02
+        padding (16, 8, 16, 8)
+        background Frame(Solid("#c9748f"), 30, 30, 30, 30)
+        hover_background Frame(Solid("#e8a0bf"), 30, 30, 30, 30)
+        text_style "skip_button_text"
+
+    textbutton "✦ notebook":
+        action Show("notebook")
+        xalign 0.02
+        yalign 0.02
+        padding (16, 8, 16, 8)
+        background Frame(Solid("#7a5c6e"), 30, 30, 30, 30)
+        hover_background Frame(Solid("#c9748f"), 30, 30, 30, 30)
+        text_style "skip_button_text"
+
 init python:
     config.character_id_prefixes.append('namebox')
 
@@ -408,3 +426,8 @@ style say_label:
     bold True
     xalign 0.0
     yalign 0.5
+
+style skip_button_text:
+    size 20
+    color "#ffffff"
+    bold True
