@@ -309,3 +309,69 @@ transform choice_pop:
     on show:
         alpha 0 zoom 0.92
         ease 0.2 alpha 1.0 zoom 1.0
+
+screen say(who, what):
+    zorder 1
+
+    style_prefix "say"
+
+    window:
+        id "window"
+
+        if who is not None:
+            window:
+                id "namebox"
+                style "namebox"
+                text who id "who"
+
+        text what id "what"
+
+    if not renpy.variant("small"):
+        add SideImage() xalign 0.0 yalign 1.0
+
+init python:
+    config.character_id_prefixes.append('namebox')
+
+style window:
+    xalign 0.5
+    xfill True
+    yalign 1.0
+    ysize 220
+    background Frame(Solid("#fdf0f580"), 0, 0, 0, 0)
+    padding (60, 30, 60, 30)
+
+style namebox:
+    xpos 60
+    ypos 0
+    xanchor 0.0
+    yanchor 1.0
+    yoffset -6
+    xsize None
+    ysize None
+    background Frame(Solid("#c9748f"), 30, 30, 30, 30)
+
+style say_label:
+    xalign 0.0
+    yalign 0.5
+    size 28
+    color "#ffffff"
+    bold True
+
+style say_dialogue:
+    xpos 60
+    xsize 1800
+    ypos 20
+    size 30
+    color "#3a2a32"
+    line_spacing 8
+    adjust_spacing False
+
+style sat_thought:
+    xpos 60
+    xsize 1800
+    ypos 20
+    size 30
+    color "#9a7a8a"
+    italic True
+    line_spacing 8
+    adjust_spacing False
