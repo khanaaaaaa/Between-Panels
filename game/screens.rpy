@@ -144,7 +144,7 @@ transform phone_anim:
         xoffset 460 alpha 0
         ease 0.4 xoffset 0 alpha 1.0
     on hide:
-        ease 0.3 xoffset 460 alpha 0.0
+        ease 0.3 xoffset 460 alpha 0
 
 transform bubble_pop:
     alpha 0 zoom 0.8
@@ -310,68 +310,101 @@ transform choice_pop:
         alpha 0 zoom 0.92
         ease 0.2 alpha 1.0 zoom 1.0
 
+transform textbox_fadein:
+    on show:
+        linear 0 alpha 0.0
+        ease 0.2 alpha 1.0
+    on hide:
+        ease 0.15 alpha 0.0
+
 screen say(who, what):
     zorder 1
-
     style_prefix "say"
 
-    window:
-        id "window"
+    if who is None:
+        frame at textbox_fadein:
+            xalign 0.5
+            yalign 0.85
+            xsize 1400
+            padding (50, 22, 50, 22)
+            background Frame(Solid("#f5e6f080"), 40, 40, 40, 40)
 
-        if who is not None:
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
+            text what id "what":
+                xalign 0.5
+                yalign 0.5
+                size 28
+                color "#2a1a22"
+                italic True
+                text_align 0.5
+                xmaximum 1280
 
-        text what id "what"
+    else:
+        frame at textbox_fadein:
+            xalign 0.5
+            yalign 1.0
+            xfill True
+            ysize 210
+            padding (70, 30, 70, 30)
+            background Frame(Solid("#fdf4f7e6"), 0, 0, 0)
 
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+            fixed:
+                xsize 6
+                yfill True
+                xpos 0
+                ypos 0
+            frame:
+                xsize 6
+                yfill True
+                background Solid("#c9748f")
+
+            text what id "what":
+                xpos 30
+                ypos 50
+                xmaximum 1760
+                size 30
+                color "#3a2a32"
+                line_spacing 10
+                adjust_spacing False
+
+            frame at textbox_fadein:
+                xpos 70
+                yalign 1.0
+                yoffset -178
+                xsize None
+                ysize None
+                padding (28, 10, 28, 10)
+                background Frame(Solid("#c9748f"), 40, 40, 40)
+
+                text who id "who":
+                    size 26
+                    color "#ffffff"
+                    bold True
+
+        if not renpy.variant("small"):
+            add SideImage() xalign 0.0 yalign 1.0
 
 init python:
     config.character_id_prefixes.append('namebox')
 
-style window:
-    xalign 0.5
-    xfill True
-    yalign 1.0
-    ysize 220
-    background Frame(Solid("#fdf0f580"), 0, 0, 0, 0)
-    padding (60, 30, 60, 30)
-
-style namebox:
-    xpos 60
-    ypos 0
-    xanchor 0.0
-    yanchor 1.0
-    yoffset -6
-    xsize None
-    ysize None
-    background Frame(Solid("#c9748f"), 30, 30, 30, 30)
-
-style say_label:
-    xalign 0.0
-    yalign 0.5
-    size 28
-    color "#ffffff"
-    bold True
 
 style say_dialogue:
-    xpos 60
-    xsize 1800
-    ypos 20
+    xpos 30
+    xsize 1760
+    ypos 50
     size 30
     color "#3a2a32"
-    line_spacing 8
+    line_spacing 10
     adjust_spacing False
 
-style sat_thought:
-    xpos 60
-    xsize 1800
-    ypos 20
-    size 30
-    color "#9a7a8a"
+style say_thought:
+    size 28
+    color "#9a6a8a"
     italic True
-    line_spacing 8
     adjust_spacing False
+
+style say_label:
+    size 26
+    color "#ffffff"
+    bold True
+    xalign 0.0
+    yalign 0.5

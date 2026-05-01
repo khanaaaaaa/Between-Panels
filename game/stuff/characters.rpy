@@ -18,7 +18,7 @@ define sara = Character(
 
 define thought = Character(
     what_italic=True,
-    what_color="#d4d8e0",
+    what_color="#2a1a22",
     what_prefix="(",
     what_suffix=")"
 )
