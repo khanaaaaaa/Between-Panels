@@ -27,6 +27,12 @@ label chapter_one:
     thought "Why doesn't anyone notice their weird hair and eye colors?"
     thought "Come on..."
     thought "Huh? A message?"
+
+    show screen phone_notification("Sara Lee ♡", "Soo-ah, are you sick? You've been acting weird since the morning.") at phone_slide_in
+    pause 2.5
+    hide screen phone_notification at phone_slide_out
+    pause 0.3
+
     thought "Huh?"
 
     return
