@@ -127,106 +127,6 @@ label prologue:
     thought "I walked out through the front gate to clear my head."
     thought "And immediately regretted it."
 
-    show npcquiet at left_char with dissolve
-
-    thought "SILVER HAIR."
-    thought "A boy with actual silver hair just stepped out of a car."
-    thought "WHAT KIND OF FANTASY CHARACTER IS THIS."
-
-    show npcquiet at right_char with dissolve
-
-    thought "And another one."
-    thought "This one looks like he belongs on the cover of a lifestyle magazine."
-    thought "They both do."
-    thought "Why are middle schoolers built like this."
-
-    npc "It's alright, sir! I'll make sure to look after Min-ho!"
-    show npcquiet at right_char
-    minho "I don't need to be looked after."
-    driver "Then, the two of you — please take care!"
-    npc "See you later~!"
-    driver "I'm entrusting the young masters to you!"
-    thought "Don't entrust them to ME. I don't even know them."
-
-    hide npcquiet
-    show wooquiet at left_char with dissolve
-
-    woo "Hi!"
-    woo "I'm Woo Ju-in!"
-    woo "You also go to Ju Jang Middle School, right?"
-    woo "What are you doing out here? Did you forget the way?"
-    soo "No, it's not that..."
-    woo "Then let's go in together!"
-    soo "Together...?"
-
-    show minhoquiet at right_char with dissolve
-
-    woo "Oh! And this is Min-ho!"
-    woo "What's your name?"
-    soo "Soo-ah. Kang Soo-ah."
-
-    hide minhoquiet
-    show minhotalking at right_char
-
-    minho "Let's go. Any longer and we'll be late."
-
-    hide minhotalking
-    show minhoquiet at right_char
-
-    hide wooquiet
-    show woosmile at left_char
-
-    woo "Okay! Come on, Soo-ah!"
-    soo "O-okay!"
-
-    thought "I followed two strangers into school."
-    thought "This is fine."
-    thought "This is completely fine."
-    thought "I have no idea who these people are."
-
-    scene bg school_hallway at bg_fit with dissolve
-    hide woo
-    hide minho
-
-    show woosmile at left_char with dissolve
-    woo "We're in first year class 4! Do you know which class you're in?"
-    soo "N-no, I don't actually."
-    woo "Then we'd better go to the staff room!"
-
-    scene bg staff_room at bg_fit with dissolve
-    hide woo
-
-    show woosmile at left_char with dissolve
-    woo "Please excuse us—"
-    show teacherquiet at right_char with dissolve
-    teacher "Is something wrong?"
-    woo "This girl doesn't know which class she's in! Could you check the roll?"
-    teacher "Let me see... Kang Soo-ah?"
-    soo "Yes!"
-    teacher "You're in class 4."
-    hide teacherquiet
-
-    thought "Class 4."
-    thought "The same class as Woo Ju-in."
-    thought "And Min-ho."
-    thought "And probably Sara."
-    thought "And knowing how today is going — everyone else I've met."
-    thought "Every single person I've encountered today is going to be in my class."
-    thought "I can feel it."
-
-    teacher "You can head over with the class president!"
-
-    thought "Everyone here is operating on story logic and I am the only one who notices."
-
-    scene bg school at bg_fit with dissolve
-    hide woo
-    hide soo
-
-    thought "I have common sense. I am a rational person."
-    thought "I will walk into this suspiciously beautiful school and have a completely normal day."
-
-    show bg floor at bg_fit with dissolve
-
     "A sketchbook landed on the ground right in front of me."
     "Pages fanned open. Pencil sketches scattered across the courtyard floor."
 
@@ -333,8 +233,116 @@ label prologue:
     thought "I refuse to be the female lead of a web novel!"
     thought "I have common sense! I have no special powers! I mind my own business!"
     thought "I am the most normal person I know!"
-    thought "...So why does my school look like a manhwa panel?!"
 
-    hide sooneutralquiet with dissolve
+    show npcquiet at left_char with dissolve
+
+    thought "SILVER HAIR."
+    thought "A boy with actual silver hair just stepped out of a car."
+    thought "WHAT KIND OF FANTASY CHARACTER IS THIS."
+
+    show npcquiet at right_char with dissolve
+
+    thought "And another one."
+    thought "This one looks like he belongs on the cover of a lifestyle magazine."
+    thought "They both do."
+    thought "Why are middle schoolers built like this."
+
+    npc "It's alright, sir! I'll make sure to look after Min-ho!"
+    show npcquiet at right_char
+    minho "I don't need to be looked after."
+    driver "Then, the two of you — please take care!"
+    npc "See you later~!"
+    driver "I'm entrusting the young masters to you!"
+    thought "Don't entrust them to ME. I don't even know them."
+
+    hide npcquiet
+    show wooquiet at left_char with dissolve
+
+    woo "Hi!"
+    woo "I'm Woo Ju-in!"
+    woo "You also go to Ju Jang Middle School, right?"
+    woo "What are you doing out here? Did you forget the way?"
+    soo "No, it's not that..."
+    woo "Then let's go in together!"
+    soo "Together...?"
+
+    show minhoquiet at right_char with dissolve
+
+    woo "Oh! And this is Min-ho!"
+    woo "What's your name?"
+    soo "Soo-ah. Kang Soo-ah."
+
+    hide minhoquiet
+    show minhotalking at right_char
+
+    minho "Let's go. Any longer and we'll be late."
+
+    hide minhotalking
+    show minhoquiet at right_char
+
+    hide wooquiet
+    show woosmile at left_char
+
+    woo "Okay! Come on, Soo-ah!"
+    soo "O-okay!"
+
+    thought "I followed two strangers into school."
+    thought "This is fine."
+    thought "This is completely fine."
+    thought "I have no idea who these people are."
+
+    scene bg school_hallway at bg_fit with dissolve
+    hide woo
+    hide minho
+
+    show woosmile at left_char with dissolve
+    woo "We're in first year class 4! Do you know which class you're in?"
+    soo "N-no, I don't actually."
+    woo "Then we'd better go to the staff room!"
+
+    scene bg staff_room at bg_fit with dissolve
+    hide woo
+
+    show woosmile at left_char with dissolve
+    woo "Please excuse us—"
+    show teacherquiet at right_char with dissolve
+    teacher "Is something wrong?"
+    woo "This girl doesn't know which class she's in! Could you check the roll?"
+    teacher "Let me see... Kang Soo-ah?"
+    soo "Yes!"
+    teacher "You're in class 4."
+    hide teacherquiet
+
+    thought "Class 4."
+    thought "The same class as Woo Ju-in."
+    thought "And Min-ho."
+    thought "And probably Sara."
+    thought "And knowing how today is going — everyone else I've met."
+    thought "Every single person I've encountered today is going to be in my class."
+    thought "I can feel it."
+
+    teacher "You can head over with the class president!"
+
+    thought "Everyone here is operating on story logic and I am the only one who notices."
+
+    teacher "Eunhyeong~"
+    thought "I'm in the same class with the popular kids..."
+
+    eunhyeong "Yes?"
+    eunhyeong "Ah. You're all in grade 1 class 4 right?"
+
+    thought "RE-"
+    thought "RED..."
+    eunhyeong "My name is Kwon Eunhyeong. It's nice to meet you."
+
+    scene bg class at bg_fit with dissolve
+    thought "At that time... I already knew what was coming."
+    show jihoquiet at center_char
+    thought "Some kind of fate decided to play tricks."
+    hide jihoquiet
+    show sarasmilequiet at center_char
+    thought "And tightly tied the string of fate between all of us."
+
+    scene black 
 
 jump chapter_one
