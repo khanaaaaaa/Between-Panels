@@ -83,4 +83,4 @@ label chapter_one:
     npc2 "Wow, that's perfect!!"
     thought "Something like this cannot be real."
 
-    return
+    jump chapter_2

@@ -50,7 +50,7 @@ screen notebook():
                     padding (10, 6, 10, 6)
                     background Frame(Solid("#c9748f"), 20, 20, 20, 20)
                     hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
-                    text_style = "skip_button_text"
+                    text_style "skip_button_text"
 
             frame:
                 xfill True
@@ -89,7 +89,7 @@ screen notebook():
                                 background Frame(Solid("#c9748f"), 20, 20, 20, 20)
                                 text character:
                                     size 22
-                                    color = "#ffffff"
+                                    color "#ffffff"
                                     bold True
 
                             for entry in entries:

@@ -61,90 +61,181 @@ screen phone_notification(sender, message):
     zorder 50
 
     fixed:
-        xalign 0.98
-        yalign 0.06
-        xsize 400
-        ysize 170
+        xalign 0.99
+        yalign 0.99
+        xsize 280
+        ysize 480
         at phone_anim
 
+        ## phone body
         frame:
-            xsize 400
-            ysize 170
+            xsize 280
+            ysize 480
             xpos 0
             ypos 0
-            background Solid("#1a1a2e")
+            background Solid("#1a1a1a")
             padding (0, 0, 0, 0)
 
+        ## rounded screen area
         frame:
-            xsize 372
-            ysize 148
+            xsize 252
+            ysize 420
             xpos 14
-            ypos 11
-            background Solid("#f8f0f5")
+            ypos 30
+            background Solid("#0d0d1a")
             padding (0, 0, 0, 0)
 
+        ## top notch
         frame:
-            xsize 372
-            ysize 26
+            xsize 80
+            ysize 18
+            xpos 100
+            ypos 30
+            background Solid("#1a1a1a")
+            padding (0, 0, 0, 0)
+
+        ## camera dot
+        frame:
+            xsize 10
+            ysize 10
+            xpos 135
+            ypos 34
+            background Solid("#333333")
+            padding (0, 0, 0, 0)
+
+        ## status bar
+        frame:
+            xsize 252
+            ysize 24
             xpos 14
-            ypos 11
-            background Solid("#2d1b2e")
+            ypos 54
+            background Solid("#111122")
             padding (0, 0, 0, 0)
 
-        text "● ● ●":
+        text "9:02":
             xpos 22
-            ypos 15
-            size 8
-            color "#c9748f"
-
-        text "9:02 AM":
-            xpos 295
-            ypos 15
-            size 10
-            color "#e8c4d4"
-
-        frame:
-            xsize 34
-            ysize 34
-            xpos 22
-            ypos 46
-            background Solid("#c9748f")
-            padding (0, 0, 0, 0)
-
-        text "✉":
-            xpos 28
-            ypos 50
-            size 18
+            ypos 57
+            size 11
             color "#ffffff"
-
-        text "[sender]":
-            xpos 66
-            ypos 46
-            size 18
-            color "#3a2a32"
             bold True
 
+        text "▸ ▸":
+            xpos 220
+            ypos 57
+            size 10
+            color "#aaaaaa"
+
+        ## notification card
+        frame:
+            xsize 232
+            ysize 110
+            xpos 24
+            ypos 90
+            background Solid("#1e1e2e")
+            padding (0, 0, 0, 0)
+
+        ## app label bar
+        frame:
+            xsize 232
+            ysize 24
+            xpos 24
+            ypos 90
+            background Solid("#2a1a2e")
+            padding (0, 0, 0, 0)
+
+        text "✉  Messages":
+            xpos 32
+            ypos 93
+            size 11
+            color "#c9748f"
+            bold True
+
+        text "now":
+            xpos 218
+            ypos 93
+            size 10
+            color "#888888"
+
+        ## sender
+        text "[sender]":
+            xpos 32
+            ypos 122
+            size 16
+            color "#ffffff"
+            bold True
+
+        ## message
         text "[message]":
-            xpos 66
-            ypos 70
-            xmaximum 290
-            size 15
-            color "#7a5c6e"
+            xpos 32
+            ypos 146
+            xmaximum 210
+            size 13
+            color "#aaaaaa"
+
+        ## home bar
+        frame:
+            xsize 80
+            ysize 5
+            xpos 100
+            ypos 444
+            background Solid("#444444")
+            padding (0, 0, 0, 0)
+
+        ## side power button
+        frame:
+            xsize 4
+            ysize 50
+            xpos 276
+            ypos 120
+            background Solid("#333333")
+            padding (0, 0, 0, 0)
+
+        ## side volume buttons
+        frame:
+            xsize 4
+            ysize 34
+            xpos 0
+            ypos 110
+            background Solid("#333333")
+            padding (0, 0, 0, 0)
 
         frame:
-            xsize 70
-            ysize 4
-            xpos 165
+            xsize 4
+            ysize 34
+            xpos 0
             ypos 154
-            background Solid("#c9748f")
+            background Solid("#333333")
             padding (0, 0, 0, 0)
+
+        ## red notification dot
+        frame:
+            xsize 16
+            ysize 16
+            xpos 240
+            ypos 86
+            background Solid("#ff0033")
+            padding (0, 0, 0, 0)
+            at notif_dot_pulse
+
+        text "1":
+            xpos 245
+            ypos 87
+            size 11
+            color "#ffffff"
+            bold True
+
+transform notif_dot_pulse:
+    block:
+        ease 0.6 alpha 1.0
+        ease 0.6 alpha 0.3
+        repeat
 
 transform phone_anim:
     on show:
-        xoffset 460 alpha 0
+        xoffset 300 alpha 0
         ease 0.4 xoffset 0 alpha 1.0
     on hide:
-        ease 0.3 xoffset 460 alpha 0
+        ease 0.3 xoffset 300 alpha 0
 
 transform bubble_pop:
     alpha 0 zoom 0.8
@@ -225,6 +316,14 @@ screen skip_indicator():
                 size 18
                 color "#e8a0bf"
                 style "skip_triangle"
+
+transform delayed_blink(delay, period):
+    alpha 0.0
+    pause delay
+    block:
+        linear (period / 2) alpha 1.0
+        linear (period / 2) alpha 0.0
+        repeat
 
 transform skip_bounce:
     yoffset 12
@@ -392,6 +491,15 @@ screen say(who, what):
         hover_background Frame(Solid("#e8a0bf"), 30, 30, 30, 30)
         text_style "skip_button_text"
 
+    textbutton "✿ back":
+        action Rollback()
+        xalign 0.98
+        yalign 0.08
+        padding (16, 8, 16, 8)
+        background Frame(Solid("#7a5c6e"), 30, 30, 30, 30)
+        hover_background Frame(Solid("#e8a0bf"), 30, 30, 30, 30)
+        text_style "skip_button_text"
+
     textbutton "✦ notebook":
         action Show("notebook")
         xalign 0.02
@@ -431,3 +539,7 @@ style skip_button_text:
     size 20
     color "#ffffff"
     bold True
+
+style skip_triangle:
+    size 18
+    color "#e8a0bf"

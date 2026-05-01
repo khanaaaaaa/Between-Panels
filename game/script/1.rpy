@@ -173,7 +173,7 @@ label prologue:
     thought "But she was wearing my uniform."
 
     hide jihoquiet
-    show npcquiet at left_char with dissolve
+    show npcquiet at center_char with dissolve
 
     npc "Hey! Did you see that just now?"
     npc "Oh my god, she touched Ji-Ho's sketchbook!"
@@ -183,16 +183,16 @@ label prologue:
     thought "I just PICKED IT UP OFF THE GROUND—"
 
     hide npcquiet
-    show npctalking at left_char
+    show npctalking at center_char
 
     npc "YOU! Don't move!!"
 
     hide npctalking
-    show npcquiet at left_char
+    show npcquiet at center_char
 
     thought "Me?! I'm being yelled at?!"
 
-    show npctalking at left_char
+    show npctalking at center_char
     npc "You touched Ji-Ho's things without permission."
     npc "Do you know what that means?"
     hide npctalking
@@ -221,7 +221,7 @@ label prologue:
     soo "PFFT—!!"
 
     hide sooneutraltalk
-    show npctalking at left_char with dissolve
+    show npctalking at center_char with dissolve
 
     npc "Did you just... laugh?"
 
@@ -234,7 +234,7 @@ label prologue:
     thought "I have common sense! I have no special powers! I mind my own business!"
     thought "I am the most normal person I know!"
 
-    show npcquiet at left_char with dissolve
+    show npcquiet at center_char with dissolve
 
     thought "SILVER HAIR."
     thought "A boy with actual silver hair just stepped out of a car."
@@ -256,7 +256,7 @@ label prologue:
     thought "Don't entrust them to ME. I don't even know them."
 
     hide npcquiet
-    show wooquiet at left_char with dissolve
+    show wooquiet at center_char with dissolve
 
     woo "Hi!"
     woo "I'm Woo Ju-in!"
@@ -281,7 +281,7 @@ label prologue:
     show minhoquiet at right_char
 
     hide wooquiet
-    show woosmile at left_char
+    show woosmile at center_char
 
     woo "Okay! Come on, Soo-ah!"
     soo "O-okay!"
@@ -295,7 +295,7 @@ label prologue:
     hide woo
     hide minho
 
-    show woosmile at left_char with dissolve
+    show woosmile at center_char with dissolve
     woo "We're in first year class 4! Do you know which class you're in?"
     soo "N-no, I don't actually."
     woo "Then we'd better go to the staff room!"
@@ -303,7 +303,7 @@ label prologue:
     scene bg staff_room at bg_fit with dissolve
     hide woo
 
-    show woosmile at left_char with dissolve
+    show woosmile at center_char with dissolve
     woo "Please excuse us—"
     show teacherquiet at right_char with dissolve
     teacher "Is something wrong?"
