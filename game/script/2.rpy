@@ -28,9 +28,9 @@ label chapter_one:
     thought "Come on..."
     thought "Huh? A message?"
 
-    show screen phone_notification("Sara Lee ♡", "Soo-ah, are you sick? You've been acting weird since the morning.") at phone_slide_in
+    show screen phone_notification("Sara Lee ♡", "Soo-ah, are you sick?")
     pause 2.5
-    hide screen phone_notification at phone_slide_out
+    hide screen phone_notification
     pause 0.3
 
     thought "Huh?"
