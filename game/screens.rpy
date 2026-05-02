@@ -543,3 +543,142 @@ style skip_button_text:
 style skip_triangle:
     size 18
     color "#e8a0bf"
+
+screen letterbox():
+    xorder 90
+    frame:
+        xfill Trueysize 80
+        ypos 0
+        background Solid("#000000")
+    frame:
+        xfill True
+        ysize 80
+        yalign 1.0
+        background Solid("#000000")
+
+transform letterbox_in:
+    on show:
+        linear 0 alpha 0.0
+        ease 0.4 alpha 1.0
+    on hide:
+        ease 0.3 alpha 0.0
+
+screen chapter_card(number, title):
+    zorder 150
+    modal True
+
+    frame:
+        xfill True
+        yfill True
+        background Solid("#00000099")
+
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 16
+
+        text "Chapter [number]":
+            xaign 0.5
+            size 28
+            color "#c9748f"
+            italic True
+
+        frame:
+            xalign 0.5
+            xsize 400
+            ysize 2
+            background Solid("#c9748f")
+            padding(0, 0, 0, 0)
+
+        text "[title]":
+            xalign 0.5
+            size 48
+            color "#ffffff"
+            bold True
+
+        frame:
+            xalign 0.5
+            xsize 400
+            ysize 2
+            background Solid("#c9748f")
+            padding (0, 0, 0, 0)
+
+        text "✦":
+            xalign 0.5
+            size 24
+            color "#c9748f"
+            at spin
+
+    timer 2.5 action Hide("chapeter_card")
+
+transform chapter_card_anim:
+    on show:
+        linear 0 alpha 0.0
+        ease 0.5 alpha 1.0
+    on hide:
+        ease 0.5 alpha 0.0
+
+screen quick_thought(text_str):
+    zorder 80
+
+    frame at bubble_pop:
+        xalign 0.5
+        yalign 0.22
+        padding (30, 14, 30, 14)
+        background Frame(Solid("#2a1a2299"), 30, 30, 30, 30)
+
+        hbox:
+            spacing 10
+            yalign 0.5
+            text "...":
+                size 20
+                color "#c9748f"
+            text "[text_str]":
+                size 24
+                color "#d0e0f0"
+                italic True
+                yalign 0.5
+            text "...":
+                size 20
+                color "#c9748f"
+                yalign 0.5
+    timer 2.0 action Hide("quick_thought")
+
+screen mood_overlay(color_hex, strngth="40"):
+    zorder 5
+    frame:
+        xfill True
+        yfill True
+        background Solid("[color_hex][strength]")
+
+transform mood_fade:
+    on show:
+        linear 0 alpha 0.0
+        ease 1.0 alpha 1.0
+    on hide:
+        ease 0.8 alpha 0.0
+
+screen impact_flash():
+    zorder 200
+    frame:
+        xfill True
+        yfill True
+        background Solid("#ffffff")
+        padding (0, 0, 0, 0)
+    timer 0.08 action Hide("impact_flash")
+
+transform flash_in:
+    linear 0 alpha 1.0
+    linear 0.08 alpha 0.0
+
+style chapter_card_number:
+    size 28
+    color "#c9748f"
+    italic True
+    xalign 0.5
+
+style chapter_card_title:
+    size 48
+    color "#ffffff"
+    bold True
+    xalign 0.5
