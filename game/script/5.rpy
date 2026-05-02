@@ -1,90 +1,171 @@
-label timeskip:
-    "3 Years Later"
-    soo "Ah, what... is it mom?"
-    soo "Hm-"
-    "Wake up."
-    thought "Ah, the voice is so soothing."
-    thought "But why is their hand so cold..."
-    soo "Eun-"
-    soo "Eun Ji-Ho! What are you doing here?!"
-    jiho "Your mom told me to wake ypou up, so she opened the door for me."
-    soo "Ah, mom!"
-    mom "I'm busy packing lunch!!!"
-    soo "Why're you acting all shy when I've been here several times?"
-    soo "D-Do I really look the same when I'm awake and asleep?"
-    jiho "You look ugly eiter way?"
-    soo "Heh-"
-    jiho "..? What?"
-    thought "Web Novel's Law Number 3!"
-    soo "Hey, you always tell Sara Park that she's ugly too."
-    soo "So, does it mean that both Yeoreong and I look the same?"
-    jiho "..."
-    jiho "Do you really want to hear it?"
-    soo "...No thanks."
-    soo "Just get out."
-    soo "I'm going to get dressed."
-    jiho "Got it. So hurry up and come out."
-    thought "Ugh... That's no fun."
-    thought "As if he weren't the male lead of a web novel already."
-    thought "In the end, my plan failed."
-    thought "Was it really just a failur?"
-    thought "3 years had passed."
-    sara "Dan-ah! You're awake?"
-    thought "Sara Lee had stayed next door to me and.."
-    thought "...She attended the same highschool as me."
-    soo "Yeah, you came by?"
-    thought "She's still as beautiful as ever."
-    thought "Of course, according to the rules of a web novel..."
-    thought "...The Four Heavenly Kings alseo enrolled in the same school."
-    thought "And today we decided to go on a graduation trip."
-    sara "They're waiting for us."
-    soo "Then shall we go?"
-    thought "Anyhow, this isn't the female lead, Sara Park's story."
-    thought "It's mine."
+label chapter_4:
 
-    eunhyeong "Oh! Here they come."
-    woo "Huh?"
-    soo "Hi~"
+    scene bg school at bg_fit with dissolve
 
-    woo "I missed you, mom!"
-    soo "Oh my, Ju-In~"
-    thought "He's just like a puppy."
-    jiho "Hey, you guys."
-    sara "You! Don't hug my Dan-I like that!"
-    woo "You're interrupting our reunion, you're so mean -"
-    jiho "..."
-    soo "Guys, let's stop..."
-    "..."
-    sara "The subway is coming. Let's go."
-    soo "Okay."
-    thought "Is he still mad about what happened?"
-    thought "Well, it's the first time we fought this badly."
-    jiho "Hey, Yoo Chunyeong. What was all that about yesterday?"
-    chunyeon "I don't want to hear that from someone who just won a bronze."
-    jiho "WHAT DOES ME WINNING A BRONZE GOT TO DO WITH ANY OF THIS?"
-    soo "They're talking about games again..."
-    jiho "Hey! Why do you still have your earphones on when someone is talking to you?"
-    thought "If only Eun Ji-Hon didn't open his mouth, he would've been better."
-    thought "Maybe my stereotype of him was just too strong..."
-    eunhyeong "Ji-Ho."
-    eunhyeong "Do you know what happens when you're too loud in a subway?"
-    jiho "Huh?"
-    jiho "Well there are no passengers except us..."
-    eunhyeong "Ah."
-    eunhyeong "You've only been riding in limousines so you wouldn't know-"
-    jiho "..."
-    jiho "I... was wrong."
+    show screen chapter_card("Chapter 4", "Rebuilding From Scratch")
+    pause 2.5
+
+    thought "Third week."
+    thought "I started paying attention."
+    thought "Not to the story — to the people."
+    thought "There's a difference."
+
+    show sarasmilequiet at center_char with dissolve
+    show sooneutralquiet at left_char with dissolve
+
+    thought "Sara brings two lunches every day."
+    thought "One for herself. One just in case."
+    thought "She never says who the second one is for."
+    thought "But she always ends up giving it to whoever looks like they forgot to eat."
+    thought "Today that was me."
+
+    sara "You didn't bring lunch again."
+    soo "I forgot."
+    sara "You forget a lot."
+    soo "I've had a lot on my mind."
+
+    hide saraneutraltalk
+    show sarasmilequiet at center_char
+
+    sara "Here."
+
+    thought "She slid her extra lunch across the desk."
+    thought "Like it was nothing."
+    thought "Like she'd been doing it for years."
+    thought "Maybe she had."
+
+    soo "You don't have to keep doing this."
+    sara "I know."
+    sara "I want to."
+
+    thought "I didn't say anything."
+    thought "I just ate the lunch."
+    thought "It was really good."
+    thought "Of course it was."
+
+    $ add_observation("Sara", "She brings two lunches every day. She gave hers to me without making it a big deal. She's been taking care of people quietly for a long time.")
+
+    hide sarasmilequiet
+    hide sooneutralquiet
+
+    scene bg school_hallway at bg_fit with dissolve
+
+    show minhoquiet at right_char with dissolve
+    show sooneutralquiet at center_char with dissolve
+
+    thought "Min-ho."
+    thought "I hadn't talked to him since the first day."
+    thought "He's the kind of person who doesn't invite conversation."
+    thought "Not rudely. Just — completely self-contained."
+    thought "Like a closed book that isn't trying to be opened."
+
+    thought "He was reading by the window."
+    thought "I sat two seats away because all the other spots felt wrong."
+
+    minho "..."
     soo "..."
-    chunyeon "Is something wrong?"
-    thought "There's always that one person in a novel that's like that."
-    thought "The type of character that is all smiles on the outside."
-    thought "But you can never really tell what they're thinking."
-    soo "Ah."
-    thought "She must've been tired because we woke up early."
-    thought "Well, we did come at dawn."
-    thought "I'm also tired because I couldn't sleep very well..."
-    thought "When the web novel started from that day,"
-    thought "I tried my best to avoid Sara Park."
-    
-    jump flashback
+    minho "You're staring."
+    soo "I'm thinking."
+    minho "About what?"
+    soo "About whether you ever get tired of being quiet."
+    minho "..."
+    minho "No."
+    soo "Really?"
+    minho "Quiet is easier than most people think."
+    minho "They just don't try it long enough."
 
+    thought "He went back to his book."
+    thought "But he hadn't told me to leave."
+    thought "I stayed."
+    thought "We sat in silence for twenty minutes."
+    thought "It was the most comfortable I'd felt all week."
+
+    $ add_observation("Kang Min-ho", "He said quiet is easier than people think. He didn't tell me to leave. That felt like something.")
+
+    hide minhoquiet
+
+    scene bg class at bg_fit with dissolve
+
+    show sooneutralquiet at center_char with dissolve
+    show woosmile at right_char with dissolve
+
+    woo "Soo-ah, do you believe in fate?"
+    soo "No."
+    woo "Not even a little?"
+    soo "I believe things happen and we make meaning out of them after."
+    woo "..."
+    woo "That's kind of sad."
+    soo "Or it means we have more control than we think."
+    woo "..."
+    woo "I never thought about it that way."
+
+    thought "He looked at me like I'd said something important."
+    thought "I was just talking."
+    thought "But Woo Ju-in actually listens."
+    thought "That's rarer than it sounds."
+
+    $ add_observation("Woo Ju-in", "He asked if I believe in fate. He actually listened to my answer. He thought about it.")
+
+    hide woosmile
+
+    scene bg school at bg_fit with dissolve
+
+    show jihoquiet at right_char with dissolve
+    show sooneutralquiet at center_char with dissolve
+
+    thought "And then there was Ji-ho."
+    thought "Who I was absolutely not thinking about."
+    thought "At all."
+    thought "Except for the part where I kept noticing him."
+
+    thought "He was on the roof after school."
+    thought "I don't know why I went up there."
+    thought "I was just walking and the stairs were there."
+    thought "That's my story and I'm keeping it."
+
+    jiho "..."
+    soo "..."
+    jiho "You followed me."
+    soo "I didn't know you were up here."
+    jiho "The door has my name on it."
+    soo "It does not."
+    jiho "..."
+    jiho "It should."
+
+    thought "Was that a joke."
+    thought "Did Eun Ji-ho just make a joke."
+    thought "I'm not writing that down."
+    thought "I'm absolutely writing that down."
+
+    $ add_observation("Ji-ho", "He made a joke on the roof. A small one. He looked surprised that he did it.")
+
+    soo "What are you drawing?"
+    jiho "..."
+    jiho "The city."
+    soo "Can I see?"
+
+    thought "Long pause."
+    thought "Longer than necessary."
+
+    jiho "No."
+    soo "Why not?"
+    jiho "It's not finished."
+    soo "I don't mind unfinished things."
+    jiho "..."
+
+    thought "He closed the sketchbook."
+    thought "Which means it wasn't the city."
+    thought "Which means it was me again."
+    thought "I didn't say anything."
+    thought "But I think he knew that I knew."
+
+    hide jihoquiet
+
+    scene black with dissolve
+
+    thought "End of the third week."
+    thought "I had stopped counting the days until I went home."
+    thought "I hadn't noticed when that happened."
+    thought "But it had."
+
+    jump chapter_5

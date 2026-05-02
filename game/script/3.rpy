@@ -1,125 +1,217 @@
-label scene_2:
-    "Look over there!"
-    "It's one of the Four Heavenly King,s Yoo Cheon Young!"
-    "Kya! Eun-Jiho from Four Heavenly Kings is there as well!"
-    "Two of the Four Heavenly Kings are seen together?!"
-    "Unbelieveable!"
-    "Ah..so handsome..."
-    npc1 "The Four Heavenly Kings!!"
-    npc1 "That sounds so good!"
-    npc2 "Right? It fits perfectly!"
-    npc1 "The Four Heavenly Kings!"
-    npc2 "I can't believe that all of The Four Heavenly Kings are in our class!"
-    npc1 "The Four Heavenly Kings!!"
-    thought "This... This is not it..."
-    npc1 "Is something wrong?"
-    thought "I have to get out of this classroom immediately!"
-    soo "Ba... Bathroom please..."
-    thought "This may be acceptable in novels but not reality!"
-    "KYA!!! EUN JI-HO IS COMING THIS WAY!"
-    thought "Wha..."
-    thought "What?"
-    jiho "Who's Sara Park?"
-    thought "If it's Sara Park then..."
+label chapter_2:
+
+    scene bg class at bg_fit with dissolve
+
+    show screen chapter_card("Chapter 2", "The Plan Was To Be Invisible")
+    pause 2.5
+
+    thought "Three days into the school year."
+    thought "My plan was going well."
+    thought "I sat in the middle. I answered when called on. I ate lunch quietly."
+    thought "Nobody paid special attention to me."
+    thought "I was successfully a background character."
+    thought "And then."
+
+    show jihoquiet at right_char with dissolve
+
+    "The classroom went quiet."
+    "Not the polite kind of quiet."
+    "The held-breath kind."
+
+    jiho "Who's Sara Lee?"
+
+    thought "..."
+    thought "Oh no."
+
+    hide sarasmilequiet
+    show saraneutraltalk at left_char with dissolve
+
     sara "..."
-    sara "It's me."
-    jiho "You're the one that came first place?"
-    sara "Yeah, So what?"
-    "That arrogant girl! How dare she speak that way to one of The Four Heavenly Kings, Eun Ji-ho!"
-    "So rude!"
+    sara "That's me."
+
+    jiho "You scored first place on the entrance exam."
+    sara "Yes."
+    jiho "Above me."
+    sara "...Yes."
     jiho "Interesting."
-    jiho "Just you wait, I won't go easy on you in the next exam."
+    jiho "Don't get comfortable. I won't go easy on you next time."
+
+    hide saraneutraltalk
+    show saradisturbed at left_char
+
     sara "Seriously?"
     sara "Were you actually going easy on me?"
+
+    hide jihoquiet
+    show jihotalking at right_char
+
     jiho "Just wait and see."
-    "Oh my god..."
-    "He's so cool"
-    npc1 "Bloody hell! That girl must be crazy!!"
-    soo "Yeah.. Crazy.."
-    thought "Ge's the weirdesr out of them..."
-    woo "Wow! You're amazing!"
-    woo "You're the first girl to ever talk to Ji-Ho that way!"
-    sara "Ji-Ho?"
-    woo "Yep! That guy's name is Eun Ji-Ho!"
-    woo "I'm Woo Ju-In!"
-    npc1 "How is it possible that she doesn't know who Ji-Ho is?!"
-    npc2 "Maybe that's his way of getting his attention"
-    woo "Anyway, you're the first person that I've ever seen to win against Ji-Ho!"
-    woo "Let's be friends~!"
-    thought "HAHA.."
-    thought "It feels like I've been thrown into a play..."
-    scene black with dissolve
-    npc1 "Bye-"
-    npc2 "See you tomorrow-"
-    thought "I zoned out in class without realizing school ended."
 
-    show saraneutraltalk
-    sara "Let's go home Dan-ah."
-    soo "Huh?"
-    soo "HUUUH?!"
-    soo "H-hey wait!"
-    sara "Dan-ah you..."
-    sara "Since this morning, why have you been acting as if I'm some stranger?"
-    thought "Is she upset?"
-    sara "Even though I kept staring at you, you just ignored me."
-    sara "Why are you acting like this?"
-    thought "What about you?"
-    thought "She genuinely thinks we're friends..."
-    sara "Dan-ah, is this because of what happened a long time ago?"
-    soo "What...?"
-    thought "SOMETHING HAPPENED???"
-    sara "I thought that since you greeted me this morning..."
-    sara "...It meant that everything was okay."
-    sara "But..."
-    sara "Was I mistaken?"
-    sara "I acted the way I normally do, but you got even more angry..."
-    soo "No, that's not it. I-"
-    thought "I don't even know what you're talking about?!"
-    sara "Then... Why do you keep avoiding me?"
-    sara "Do you hate me now?"
+    hide jihotalking
+    show jihoquiet at right_char
+
+    hide saradisturbed
+
+    npc1 "Did she just— talk back to Ji-ho?!"
+    npc2 "That girl is insane."
+    npc1 "He's going to destroy her on the next exam."
+
+    show sooneutralquiet at center_char with dissolve
+
+    thought "He's the strangest one out of all of them."
+    thought "The others at least have normal social behavior."
+    thought "Ji-ho just walks up to people and declares academic war."
+    thought "Who does that."
+
+    hide jihoquiet
+
+    show woosmile at right_char with dissolve
+
+    woo "Wow! You're the first person to ever talk back to Ji-ho like that!"
+    woo "I'm Woo Ju-in. Let's be friends!"
+
+    hide sarasmilequiet
+    show sarasmiletalk at left_char with dissolve
+
+    sara "Ji-ho?"
+    woo "That's his name, yeah. Eun Ji-ho."
+    woo "Don't worry about him. He's like that with everyone he finds interesting."
+    sara "...Interesting."
+
+    hide sarasmiletalk
+    hide woosmile
+
+    thought "Interesting."
+    thought "He challenged her because he found her interesting."
+    thought "That is such a male lead thing to do."
+    thought "I need to not be interesting."
+    thought "I need to be the least interesting person in this building."
+
+    scene black with dissolve
+
+    npc1 "Bye—"
+    npc2 "See you tomorrow—"
+
+    thought "I zoned out for the rest of the day."
+    thought "By the time I noticed, school was over."
+
+    scene bg school_hallway at bg_fit with dissolve
+
+    show saraneutraltalk at center_char with dissolve
+    show sooneutralquiet at left_char with dissolve
+
+    sara "Soo-ah. Let's walk home."
+    soo "Oh. Yeah."
+
+    thought "We walked in silence for a while."
+    thought "I kept waiting for her to say something."
+    thought "She kept waiting for me to say something."
+    thought "Neither of us did."
+
+    sara "Soo-ah."
+    soo "Mm?"
+    sara "Since this morning... you've been acting like I'm a stranger."
     soo "..."
-    soo "No.. I was just a bit confused, that's all."
-    soo "How could I hate you..."
-    sara "Really? You're really not made at me?"
-    soo "Of course not!"
-    soo "What could you do to make me hate you?!"
-    thought "I don't even know who you are in the first place!!"
-    sara "That's a huge relief!"
-    sara "Because you're my one and only bestfriend."
-    show bg
 
-    sara "Then Dan-I, I'll see you tomorrow!"
-    soo "Y-Yeah.."
-    soo "...."
+    thought "Is she upset?"
+    thought "She looks upset."
 
-    scene bg room
+    sara "I kept looking at you in class. You kept looking away."
+    sara "Why are you acting like this?"
 
-    thought "Ah..."
-    thought "What the hell.. happened today..."
-    thought "Let's just sleep..."
+    thought "What do I say."
+    thought "I literally don't know who she is."
+    thought "I can't say that."
+
+    soo "I'm not avoiding you. I've just been... adjusting."
+    sara "Adjusting."
+    soo "First day jitters."
+
+    hide saraneutraltalk
+    show saradisturbed at center_char
+
+    sara "Soo-ah. Is this because of what happened before?"
+    soo "What...?"
+
+    thought "SOMETHING HAPPENED."
+    thought "Between us. Something happened."
+    thought "What did I do."
+
+    sara "I thought when you said hi to me this morning it meant things were okay."
+    sara "But then you spent the whole day avoiding me."
+    sara "Was I wrong to think that?"
+
+    thought "I don't know what I'm supposed to have done."
+    thought "I don't know what the Soo-ah of this world did."
+    thought "But whatever it was — she's been waiting for an apology."
+    thought "And she's been patient about it."
+    thought "That's worse somehow."
+
+    soo "No. You weren't wrong."
+    soo "I'm not mad at you. I was never mad at you."
+    soo "I've just been... in my head."
+
+    hide saradisturbed
+    show sarasmilequiet at center_char
+
+    sara "Really?"
+    soo "Really. I'm sorry if it seemed like I was pushing you away."
+
+    thought "She smiled."
+    thought "Like she'd been holding her breath and finally let it out."
+
+    sara "That's a relief."
+    sara "You're my best friend, Soo-ah."
+    sara "I don't have another one."
+
+    thought "..."
+    thought "She said it so simply."
+    thought "Like it was just a fact."
+    thought "I don't have another one."
+    thought "I felt something twist in my chest."
+    thought "I don't know what to do with that."
+
+    $ add_observation("Sara", "She said I'm her only best friend. She's been waiting for me to stop avoiding her. She's been patient this whole time.")
+
+    hide sarasmilequiet
+
+    scene bg room at bg_fit with dissolve
+
+    show sooneutralquiet at center_char with dissolve
+
+    thought "I got home and sat on my bed for a long time."
+    thought "Thinking."
+
+    soo "Okay."
+    soo "Let's think about this seriously."
+
+    thought "This world is real."
+    thought "Or at least — it's real enough."
+    thought "The people in it are real."
+    thought "Sara is real."
+    thought "And whatever happened between us — the Soo-ah of this world and Sara — that's real too."
+    thought "I'm living someone else's life."
+    thought "And I've already made a mess of it."
+
+    hide sooneutralquiet
+    show sooneutraltalk at center_char
+
+    soo "..."
+    soo "What do I do."
+
+    hide sooneutraltalk
+    show sooneutralquiet at center_char
+
+    thought "Option one: find a way back to my original world."
+    thought "Option two: figure out what this world is and survive it."
+    thought "Option three: panic."
+    thought "I've already done option three."
+    thought "Let's try option two."
+
     scene black with dissolve
-    thought "I don't know what's happening but maybe everything will go back to normal once I sleep it off."
-    thought "That''s right... And maybe even my uniform will go back to normal..."
-    thought "Ji Jon... This ridiculous school name will also go away right?"
-    thought "The Four Heavenly Kings and those other things too..."
-    scene bg room
-    soo "!!"
-    soo "..!!"
-    thought "I'm in my pajamas!"
-    thought "I knew it..!"
-    thought "It was all a dream!"
-    soo "Mum, you're here-?!"
-    mom "What sort of child would sleep all afternoon until now."
-    mom "How are you going to sleep at night?"
-    soo "Mum listen to this, I fell asleep while reading a web novel yesterday..."
-    soo "And I dreamt of the exact same thing that happened in the novel."
-    soo "Even both my uniform and school changed."
-    soo "And the characters that were also in the novel appeared-"
-    soo "It was scary how real it felt."
-    soo "And it felt like I was thrown into an unfamiliar world..."
-    soo "And a girl I have never met before was my next door neighbour and said we were best friends."
-    soo "I got goosebumps all over!"
-    mom "You're talking about the girl next door right? Sara?"
-    soo "How... How do you know about her?"
+
+    thought "I fell asleep thinking about it."
+    thought "And woke up still in this world."
+    thought "Of course."
 
     jump chapter_3
