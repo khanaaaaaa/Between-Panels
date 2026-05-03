@@ -2,8 +2,7 @@ label chapter_2:
 
     scene bg class at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 2", "The Plan Was To Be Invisible")
-    pause 2.5
+    show screen chapter_card("Chapter 2", "I Was Going To Be Invisible")
 
     thought "Three days into the school year."
     thought "My plan was going well."

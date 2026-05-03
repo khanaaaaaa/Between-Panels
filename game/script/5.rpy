@@ -2,8 +2,7 @@ label chapter_4:
 
     scene bg school at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 4", "Rebuilding From Scratch")
-    pause 2.5
+    show screen chapter_card("Chapter 4", "The People Are Real")
 
     thought "Third week."
     thought "I started paying attention."

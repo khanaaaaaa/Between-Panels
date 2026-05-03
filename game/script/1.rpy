@@ -2,8 +2,7 @@ label prologue:
 
     scene bg room at bg_fit with dissolve
 
-    show screen chapter_card("Prologue", "The World Has Dot Patterns On It")
-    pause 2.5
+    show screen chapter_card("Prologue", "Something Is Wrong With My Walls")
 
     thought "The morning of my middle school entrance ceremony."
     thought "I woke up and something was wrong."

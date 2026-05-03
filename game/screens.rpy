@@ -545,9 +545,10 @@ style skip_triangle:
     color "#e8a0bf"
 
 screen letterbox():
-    xorder 90
+    zorder 90
     frame:
-        xfill Trueysize 80
+        xfill True
+        ysize 80
         ypos 0
         background Solid("#000000")
     frame:
@@ -565,21 +566,21 @@ transform letterbox_in:
 
 screen chapter_card(number, title):
     zorder 150
-    modal True
 
     frame:
         xfill True
         yfill True
-        background Solid("#00000099")
+        background Solid("#000000cc")
+        padding (0, 0, 0, 0)
 
     vbox:
         xalign 0.5
         yalign 0.5
         spacing 16
 
-        text "Chapter [number]":
-            xaign 0.5
-            size 28
+        text "[number]":
+            xalign 0.5
+            size 24
             color "#c9748f"
             italic True
 
@@ -588,13 +589,14 @@ screen chapter_card(number, title):
             xsize 400
             ysize 2
             background Solid("#c9748f")
-            padding(0, 0, 0, 0)
+            padding (0, 0, 0, 0)
 
         text "[title]":
             xalign 0.5
-            size 48
+            size 44
             color "#ffffff"
             bold True
+            text_align 0.5
 
         frame:
             xalign 0.5
@@ -609,7 +611,7 @@ screen chapter_card(number, title):
             color "#c9748f"
             at spin
 
-    timer 2.5 action Hide("chapeter_card")
+    timer 2.5 action Hide("chapter_card")
 
 transform chapter_card_anim:
     on show:
@@ -644,12 +646,13 @@ screen quick_thought(text_str):
                 yalign 0.5
     timer 2.0 action Hide("quick_thought")
 
-screen mood_overlay(color_hex, strngth="40"):
+screen mood_overlay(color_hex, strength="40"):
     zorder 5
     frame:
         xfill True
         yfill True
-        background Solid("[color_hex][strength]")
+        background Solid(color_hex + strength)
+        padding (0, 0, 0, 0)
 
 transform mood_fade:
     on show:

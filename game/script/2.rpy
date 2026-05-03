@@ -3,7 +3,6 @@ label chapter_one:
     scene bg class at bg_fit with dissolve
 
     show screen chapter_card("Chapter 1", "Everyone Is Suspiciously Good Looking")
-    pause 2.5
 
     show teachertalking at center_char with dissolve
 

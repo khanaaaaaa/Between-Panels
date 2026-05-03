@@ -2,8 +2,7 @@ label chapter_3:
 
     scene bg room at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 3", "The Part Where I Make A Decision")
-    pause 2.5
+    show screen chapter_card("Chapter 3", "New Plan")
 
     show sooneutralquiet at center_char with dissolve
 
