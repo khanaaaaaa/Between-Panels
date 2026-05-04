@@ -46,6 +46,18 @@ define chunyeon = Character(
     who_outlines=[(2, "#000", 0, 0)]
 )
 
+define chunyeon = Character(
+    "Chun-young",
+    color="#c8c8e8",
+    who_outlines=[(2, "#000", 0, 0)]
+)
+
+define eunhyeong = Character(
+    "Eunhyeong",
+    color="#d4b8a0",
+    who_outlines=[(2, "#000", 0, 0)]
+)
+
 define yeomin = Character(
     "Yeo-min",
     color="#e8c8d8",
@@ -94,3 +106,5 @@ default affection_jiho = 0
 default affection_woo = 0
 default affection_minho = 0
 default affection_sara = 0
+default affection_chunyeon = 0
+default affection_eunhyeong = 0
