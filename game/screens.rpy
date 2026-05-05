@@ -367,47 +367,50 @@ transform notify_pop:
         ease 0.3 alpha 0.0 yoffset -20
 
 screen choice(items):
-    style_prefix "choice"
-
     vbox:
         xalign 0.5
         yalign 0.5
-        spacing 18
+        spacing 14
 
         for i in items:
             button:
                 action i.action
                 xalign 0.5
-                xminimum 500
-                xmaximum 900
-                padding (40, 18, 40, 18)
-                background Frame(Solid("#c9748f"), 40, 40, 40, 40)
+                xminimum 700
+                xamaximum 1000
+                padding (50, 20, 50, 20)
+                background Frame(Solid("#fdf0f5"), 40, 40, 40, 40)
                 hover_background Frame(Solid("#c9748f"), 40, 40, 40, 40)
                 at choice_pop
 
                 hbox:
-                    xalign 0.5
+                    xalign 0.0
                     yalign 0.5
-                    spacing 12
+                    spacing 16
+
                     text "✦":
-                        size 18
-                        color "#c9748f"
-                        yalign 0.5
+                        size 16
+                        color "#e8a0bf"
+                        hover_color "#ffffff"
+
                     text i.caption:
-                        size 28
-                        color "#3a2a32"
+                        size 26
+                        color "#7a5c6e"
                         hover_color "#ffffff"
                         xalign 0.5
                         yalign 0.5
+                        text_align 0.5
+
                     text "✦":
-                        size 18
-                        color "#c9748f"
+                        size 16
+                        color "#e8a0bf"
+                        hover_color "#ffffff"
                         yalign 0.5
 
 transform choice_pop:
     on show:
-        alpha 0 zoom 0.92
-        ease 0.2 alpha 1.0 zoom 1.0
+        alpha 0 yoffset 10 zoom 0.97
+        ease 0.25 alpha 1.0 yoffset 0 zoom 1.0
 
 transform textbox_fadein:
     on show:
@@ -420,22 +423,37 @@ screen say(who, what):
     zorder 1
     style_prefix "say"
 
-    if who is None:
+    if who is none:
         frame at textbox_fadein:
             xalign 0.5
-            yalign 0.85
-            xsize 1400
-            padding (50, 22, 50, 22)
-            background Frame(Solid("#f5e6f080"), 40, 40, 40, 40)
+            yalign 0.82
+            xsize 1300
+            padding (60, 28, 60, 28)
+            background Frame(Solid("#2a1a2266"), 50, 50, 50, 50)
 
-            text what id "what":
+            hbox:
                 xalign 0.5
                 yalign 0.5
-                size 28
-                color "#2a1a22"
-                italic True
-                text_align 0.5
-                xmaximum 1280
+                spacing 20
+
+                text "✦":
+                    size 18
+                    color "#c9748f99"
+                    yalign 0.5
+
+                text what id "what":
+                    xalign 0.5
+                    yalign 0.5
+                    size 27
+                    color "#f0e0f0"
+                    italic True
+                    text_align 0.5
+                    xamaximum 1100
+
+                text "✦":
+                    size 18
+                    color "#c9748f99"
+                    yalign 0.5
 
     else:
         frame at textbox_fadein:
@@ -482,32 +500,45 @@ screen say(who, what):
         if not renpy.variant("small"):
             add SideImage() xalign 0.0 yalign 1.0
 
-    textbutton "✿ skip":
-        action Skip()
+    hbox:
         xalign 0.98
         yalign 0.02
-        padding (16, 8, 16, 8)
-        background Frame(Solid("#c9748f"), 30, 30, 30, 30)
-        hover_background Frame(Solid("#e8a0bf"), 30, 30, 30, 30)
-        text_style "skip_button_text"
+        spacing 8
 
-    textbutton "✿ back":
-        action Rollback()
-        xalign 0.98
-        yalign 0.08
-        padding (16, 8, 16, 8)
-        background Frame(Solid("#7a5c6e"), 30, 30, 30, 30)
-        hover_background Frame(Solid("#e8a0bf"), 30, 30, 30, 30)
-        text_style "skip_button_text"
+        textbutton "↩":
+            action Rollback()
+            padding (12, 8, 12, 8)
+            background Frame(Solid("#e8c4d4"), 20, 20, 20, 20)
+            hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            text_style "skip_button_text"
 
-    textbutton "✦ notebook":
+        textbutton "✿ skip":
+            action Skip()
+            padding (16, 8, 16, 8)
+            background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            text_style "skip_button_text"
+
+        textbutton "✿ skip":
+            action Skip()
+            padding (16, 8, 16, 8)
+            background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
+            text_style "skip_button_text"
+
+    textbutton "✦ notes":
         action Show("notebook")
         xalign 0.02
         yalign 0.02
         padding (16, 8, 16, 8)
-        background Frame(Solid("#7a5c6e"), 30, 30, 30, 30)
-        hover_background Frame(Solid("#c9748f"), 30, 30, 30, 30)
-        text_style "skip_button_text"
+        background Frame(Solid("#f5e0ea"), 20, 20, 20, 20)
+        text_style "notes_button_text"
+
+style notes_button_text:
+    size 20
+    color "#c9748f"
+    bold True
+    hover_color "#ffffff"
 
 init python:
     config.character_id_prefixes.append('namebox')
@@ -685,3 +716,47 @@ style chapter_card_title:
     color "#ffffff"
     bold True
     xalign 0.5
+
+transform scene_wipe:
+    on show:
+        alpha 0.0
+        linear 0.3 alpha 1.0
+    on hide:
+        linear 0.3 alpha 0.0
+
+screen scene_title(text_str):
+    zorder 160
+
+    frame:
+        xfill True
+        yfill True
+        background Solid("#00000088")
+        padding (0, 0, 0, 0)
+
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 30
+
+        frame:
+            ysize 2
+            xsize 200
+            yalign 0.5
+            background Solid("#c9748f")
+            padding (0, 0, 0, 0)
+
+        text "[text_str]":
+            size 36
+            color "#ffffff"
+            italic True
+            xalign 0.5
+            yalign 0.5
+
+        frame:
+            ysize 2
+            xsize 200
+            yalign 0.5
+            background Solid("#c9748f")
+            padding (0, 0, 0, 0)
+
+    timer 2.0 action Hide("scene_title")
