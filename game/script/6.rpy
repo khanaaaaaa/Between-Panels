@@ -288,4 +288,4 @@ label chapter_6:
 
     scene black with dissolve
 
-    jump chapter_7
+    jump chapter_6_extras

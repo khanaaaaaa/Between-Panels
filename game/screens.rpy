@@ -377,7 +377,7 @@ screen choice(items):
                 action i.action
                 xalign 0.5
                 xminimum 700
-                xamaximum 1000
+                xmaximum 1000
                 padding (50, 20, 50, 20)
                 background Frame(Solid("#fdf0f5"), 40, 40, 40, 40)
                 hover_background Frame(Solid("#c9748f"), 40, 40, 40, 40)
@@ -423,7 +423,7 @@ screen say(who, what):
     zorder 1
     style_prefix "say"
 
-    if who is none:
+    if who is None:
         frame at textbox_fadein:
             xalign 0.5
             yalign 0.82
@@ -448,7 +448,7 @@ screen say(who, what):
                     color "#f0e0f0"
                     italic True
                     text_align 0.5
-                    xamaximum 1100
+                    xmaximum 1100
 
                 text "✦":
                     size 18

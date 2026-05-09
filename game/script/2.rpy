@@ -84,4 +84,4 @@ label chapter_one:
 
     thought "Okay. I am going to be invisible. I am going to survive this."
 
-    jump chapter_2
+    jump chapter_2_extras

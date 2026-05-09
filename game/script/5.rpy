@@ -104,4 +104,4 @@ label chapter_4:
     thought "End of the third week. I'd stopped counting the days until I went home."
     thought "I hadn't noticed when that happened. But it had."
 
-    jump chapter_5
+    jump chapter_4_extras
