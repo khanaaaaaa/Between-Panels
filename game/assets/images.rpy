@@ -5,7 +5,16 @@ image soosmiletalk = "images/soosmiletalk.png"
 
 image saracrying = "images/"
 
-
+image jihoquiet = "images/Black haired blue eye boy/jihoquiet.png"
+image jihoneutralquiet = "images/Black haired blue eye boy/jihoneutralquiet.png"
+image jihotalking = "images/Black haired blue eye boy/jihotalking.png"
+image jihoangrytalking = "images/Black haired blue eye boy/jihoangrytalking.png"
+image jihosad = "images/Black haired blue eye boy/jihosad.png"
+image jihocrying = "images/Black haired blue eye boy/jihocrying.png"
+image jihosmiling = "images/Black haired blue eye boy/jihoamiling.png"
+image jihointear = "images/Black haired blue eye boy/jihointear.png"
+image jihoswating = "images/Black haired  blue eye boy/jihosweating.png"
+image jihoworried = "images/Black haired blue eye boy/jihoworried.png"
 
 image bg room = "images/background/room.jpg"
 image bg hallway = "images/background/hallway.png"
