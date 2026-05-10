@@ -75,6 +75,7 @@ label chapter_one:
 
     thought "The Panel Kings. I cannot believe I am living inside a story where that just happened."
 
+    hide sooneutralquiet
     show sooneutraltalk at center_char
 
     soo "...Pfft."
@@ -83,5 +84,7 @@ label chapter_one:
     show sooneutralquiet at center_char
 
     thought "Okay. I am going to be invisible. I am going to survive this."
+
+    hide sooneutralquiet
 
     jump chapter_2_extras

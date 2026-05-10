@@ -59,6 +59,7 @@ label chapter_3:
     $ add_observation("Woo Ju-in", "He knew Sara was worried before she said anything. He just notices.")
 
     hide woosmile
+    hide sooneutralquiet
 
     scene bg room at bg_fit with dissolve
 

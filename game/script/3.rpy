@@ -10,6 +10,7 @@ label chapter_2:
     thought "I was successfully a background character."
     thought "And then."
 
+    hide sooneutralquiet
     show jihoquiet at right_char with dissolve
 
     "The classroom went quiet. Not the polite kind."
@@ -18,7 +19,6 @@ label chapter_2:
 
     thought "Oh no."
 
-    hide sarasmilequiet
     show saraneutraltalk at left_char with dissolve
 
     sara "That's me."
@@ -45,12 +45,10 @@ label chapter_2:
     thought "He just walks up to people and declares academic war. Who does that."
 
     hide jihoquiet
-
     show woosmile at right_char with dissolve
 
     woo "You're the first person to ever talk back to Ji-ho like that! I'm Woo Ju-in. Let's be friends!"
 
-    hide sarasmilequiet
     show sarasmiletalk at left_char with dissolve
 
     sara "Ji-ho?"
@@ -114,6 +112,7 @@ label chapter_2:
     $ add_observation("Sara", "She said I'm her only best friend. She's been patient this whole time.")
 
     hide sarasmilequiet
+    hide sooneutralquiet
 
     scene bg room at bg_fit with dissolve
 

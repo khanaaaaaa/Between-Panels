@@ -12,33 +12,38 @@ label prologue:
     show sooneutralquiet at center_char with dissolve
 
     mom "Soo-ah! You're going to be late!"
+
     hide sooneutralquiet
     show sooneutraltalk at center_char
+
     soo "Mom, one second—"
+
     hide sooneutraltalk
     show sooneutralquiet at center_char
+
     mom "SOO-AH. NOW."
+
     hide sooneutralquiet
     show sooneutraltalk at center_char
+
     soo "I'M GOING!"
 
     hide sooneutraltalk
-    show sooneutralquiet at center_char
 
     thought "Okay. It's probably just the morning light. Everything is fine."
     thought "...Right?"
-    
+
     scene bg hallway at bg_fit with dissolve
 
     thought "It was not fine."
     thought "The hallway looked like the establishing shot of a romance drama. Cherry blossoms through the window. In March."
-    hide sooneutralquiet
+    thought "CHERRY BLOSSOMS. IN MARCH."
+
     show sarasmilequiet at center_char with dissolve
 
-    thought "And then I saw her."
-    thought "Standing right outside my door like she'd been waiting."
+    thought "And then I saw her. Standing right outside my door like she'd been waiting."
     thought "Pale skin. Blond hair to her waist. Eyes like a clear sky."
-    thought "I have never seen this beautiful of a person in my entire life."
+    thought "I have never seen this person in my entire life."
 
     hide sarasmilequiet
     show sarasmiletalk at center_char
@@ -51,7 +56,6 @@ label prologue:
     thought "Oh no. Her voice is pretty too. Of course it is."
 
     soo "WAIT. Who are you?!"
-    soo "How do you know my name?"
 
     hide sarasmilequiet
     show saraneutraltalk at center_char
@@ -59,12 +63,12 @@ label prologue:
     sara "...It's me. Sara."
 
     hide saraneutraltalk
-    show sarasmilequiet at center_char
+    show saraquiet at center_char
 
     thought "Sara. Sara Lee. I have never heard that name in my fourteen years of life."
     thought "And yet she's looking at me like I should know exactly who she is."
 
-    hide sarasmilequiet
+    hide saraquiet
     show saraneutraltalk at center_char
 
     sara "I know this is strange. Let's just get to school first, okay?"
@@ -75,19 +79,10 @@ label prologue:
     thought "She made a face. Sad and delicate. The kind that only exists in fiction."
     thought "I felt guilty. I don't even know her and I felt guilty."
 
-    hide saraquiet
-    show saraneutraltalk at center_char
-
     soo "...Fine."
 
-    hide saraneutraltalk
-    show saraquiet at center_char
-
-    thought "I am going to regret this. I already regret this."
-
     hide saraquiet
 
-    scene black
     scene bg school at bg_fit with dissolve
 
     thought "Ju Jang Middle School. I've walked past it a hundred times."
@@ -97,24 +92,24 @@ label prologue:
     show saraneutraltalk at center_char with dissolve
 
     sara "Soo-ah, you've gone pale."
-    hide saraneutraltalk
-    show saraquiet at center_char
-    soo "Does this school look normal to you?"
-    hide saraquiet
-    show saraneutraltalk at center_char
-    sara "What do you mean? It looks the same as always."
 
     hide saraneutraltalk
     show saraquiet at center_char
+
+    soo "Does this school look normal to you?"
+
+    hide saraquiet
+    show saraneutraltalk at center_char
+
+    sara "What do you mean? It looks the same as always."
+
+    hide saraneutraltalk
 
     thought "The same as always. Right. March 2nd. Entrance ceremony day."
     thought "My life has started to look exactly like the first chapter of a web novel."
     thought "And I, Kang Soo-ah, am apparently in it. Great."
 
-    soo "Never mind. I need some air."
-
-    hide saraquiet
-    show saraneutraltalk at center_char with dissolve
+    show saraneutraltalk at center_char
 
     sara "W-wait—!"
 
@@ -122,17 +117,12 @@ label prologue:
 
     scene bg school_gate at bg_fit with dissolve
 
-    show sooneutralquiet
+    show sooneutralquiet at center_char with dissolve
 
     thought "I walked out through the front gate to clear my head. And immediately regretted it."
 
     "A sketchbook hit the ground right in front of me. Pages fanned open."
 
-    scene bg floor at bg_fit with dissolve
-    hide sooneutralquiet
-    thought "..."
-    scene bg school_gate at bg_fit with dissolve
-    show sooneutralquiet at center_char
     thought "I looked up. A boy was sitting in the cherry blossom tree. Just sitting there. Sketching."
     thought "Like that was a completely normal thing to do."
 
@@ -151,7 +141,6 @@ label prologue:
 
     hide jihoangrytalking
     show jihoquiet at center_char
-
     show sooneutraltalk at center_char
 
     soo "S-sorry! Yes!"
@@ -217,26 +206,23 @@ label prologue:
 
     npc "It's alright, sir! I'll look after Min-ho!"
 
-    hide minhoquiet
-    show minhotalking at right_char with dissolve
+    hide npcquiet
+    show minhoquiet at right_char with dissolve
 
     minho "I don't need to be looked after."
-
-    hide minhotalking
-    show minhoquiet at right_char
 
     driver "Please take care, both of you!"
 
     thought "Don't entrust them to ME. I don't know any of you."
 
-    hide npcquiet
+    hide minhoquiet
     show wooquiet at center_char with dissolve
 
     woo "Hi! I'm Woo Ju-in! What are you doing out here?"
     soo "I just needed some air."
     woo "Then let's go in together!"
 
-    show minhoquiet at right_char
+    show minhoquiet at right_char with dissolve
 
     woo "Oh! And this is Min-ho. What's your name?"
     soo "Kang Soo-ah."
@@ -257,8 +243,8 @@ label prologue:
     thought "I followed two strangers into school. This is fine. Completely fine."
 
     scene bg school_hallway at bg_fit with dissolve
-    hide woo
-    hide minho
+    hide woosmile
+    hide minhoquiet
 
     show woosmile at center_char with dissolve
 
@@ -267,7 +253,7 @@ label prologue:
     woo "Staff room first then!"
 
     scene bg staff_room at bg_fit with dissolve
-    hide woo
+    hide woosmile
 
     show woosmile at center_char with dissolve
     show teacherquiet at right_char with dissolve
@@ -280,6 +266,7 @@ label prologue:
     thought "Class 4. Same as Woo Ju-in. And Min-ho. And probably Sara."
     thought "Every single person I've met today is going to be in my class. I can feel it."
 
+    hide woosmile
     show eunhyeong at right_char with dissolve
 
     eunhyeong "Oh — you're all in class 4? I'm Kwon Eunhyeong. Nice to meet you."

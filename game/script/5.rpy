@@ -46,6 +46,7 @@ label chapter_4:
     $ add_observation("Kang Min-ho", "Quiet is easier than people think. He didn't tell me to leave.")
 
     hide minhoquiet
+    hide sooneutralquiet
 
     scene bg class at bg_fit with dissolve
 
@@ -66,6 +67,7 @@ label chapter_4:
     $ add_observation("Woo Ju-in", "He asked if I believe in fate and actually listened to the answer.")
 
     hide woosmile
+    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
@@ -88,6 +90,10 @@ label chapter_4:
     $ add_observation("Ji-ho", "He made a joke on the roof. Looked surprised that he did it.")
 
     soo "What are you drawing?"
+
+    hide jihoquiet
+    show jihoquiet at right_char
+
     jiho "The city."
     soo "Can I see?"
     jiho "No. It's not finished."
@@ -98,6 +104,7 @@ label chapter_4:
     thought "I think he knew that I knew."
 
     hide jihoquiet
+    hide sooneutralquiet
 
     scene black with dissolve
 
