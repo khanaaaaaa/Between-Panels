@@ -2,12 +2,9 @@ label route_jiho_school:
 
     scene bg class at bg_fit with dissolve
 
-    thought "Back At School - Three Days After The Trip"
-    thought "Things were different."
-    thought "He just sat one seat closer in the library."
-    thought "And when I walked in, he looked up."
-    thought "Not at the door... at me."
-    thought "Like he'd been waiting specifically for me."
+    thought "Back at school. Three days after the trip."
+    thought "He sat one seat closer in the library."
+    thought "When I walked in he looked up. Not at the door. At me."
 
     jiho "You're late."
     soo "By four minutes."
@@ -16,27 +13,24 @@ label route_jiho_school:
     jiho "..."
     jiho "I noticed."
 
-    thought "I sat down."
-    thought "He pushed his notes slightly toward me."
+    thought "I sat down. He pushed his notes slightly toward me."
     thought "That was everything."
 
     soo "Ji-ho."
     jiho "Mm."
-    soo "The drawing.. The one from the trip."
+    soo "The drawing. The one from the trip."
     jiho "What about it?"
+    soo "Did you mean it?"
     jiho "..."
-    jiho "I drew what was there."
-    soo "That's not what I asked."
-    jiho "..."
-    jiho "Yes."
-    jiho "I meant it."
+    jiho "Yes. I meant it."
 
-    thought "He went back to his notes."
-    thought "I went back to mine."
-    thought "But I was smiling."
-    thought "And so was he."
-    thought "Just barely."
+    thought "He went back to his notes. I went back to mine."
+    thought "But I was smiling. And so was he. Just barely."
     thought "Number eight."
+
+    scene black with dissolve
+    jump final_chapter
+
 
 label route_chunyeon_school:
 
@@ -44,17 +38,12 @@ label route_chunyeon_school:
 
     thought "Back at school."
     thought "Chun-young was different in a way nobody else seemed to notice."
-    thought "He was still at the center of everything."
-    thought "Still effortlessly present."
-    thought "But occasionally he'd catch my eye across the room."
-    thought "And for a second the performance would drop."
-    thought "Just for me."
-    thought "I think that was on purpose."
+    thought "Occasionally he'd catch my eye across the room."
+    thought "And for a second the performance would drop. Just for me."
 
     chunyeon "You're staring again."
     soo "You keep catching me."
-    cunyeon "I keep looking."
-    soo "..."
+    chunyeon "I keep looking."
     soo "That's new."
     chunyeon "Is it?"
     soo "You used to look through people."
@@ -62,111 +51,91 @@ label route_chunyeon_school:
     chunyeon "I still do."
     chunyeon "Just not you."
 
-    thought "He said it simply."
-    thought "Like it was just a fact he'd accepted."
-    thought "I didn't say anything."
-    thought "I just looked back."
-    thought "And let that be enough."
+    thought "He said it simply. Like a fact he'd accepted."
+    thought "I just looked back. And let that be enough."
 
     scene black with dissolve
     jump final_chapter
 
+
 label route_eunhyeong_school:
+
     scene bg school_hallway at bg_fit with dissolve
 
     thought "Back at school."
     thought "Eunhyeong was still the same on the outside."
-    thought "Still easy.."
-    thought ".. But sometimes he'd say something that was just for me."
-    thought "Not performed."
+    thought "But sometimes he'd say something that was just for me. Not performed."
 
     eunhyeong "Hey."
     soo "Hey."
-    eunhyeong "I've been thinking."
-    soo "About what?"
-    eunhyeong "About what you said..."
-    eunhyeong "That you don't need anything from me..."
-    soo "I said you don't have to perform form me."
+    eunhyeong "I've been thinking about what you said."
+    eunhyeong "That you don't need anything from me."
+    soo "I said you don't have to perform for me."
     eunhyeong "Same thing."
     eunhyeong "I've been trying to figure out what that feels like."
     soo "And?"
-    eunhyeong "..."
-    eunhyeong "Strange.. but good."
+    eunhyeong "Strange. But good."
     eunhyeong "Like putting something heavy down."
     soo "You can pick it back up whenever you need to."
-    eunhyeong "..."
-    eunhyeong "I know."
-    eunhyeong "That's the part that helps."
+    eunhyeong "I know. That's the part that helps."
 
-    thought "He smiled."
-    thought "The real one."
-    thought "In the middle of the hallway with everyone around."
-    thought "Not performing it."
-    thought "Just doing it."
+    thought "He smiled. The real one. In the middle of the hallway."
+    thought "Not performing it. Just doing it."
 
     scene black with dissolve
     jump final_chapter
+
 
 label route_woo_school:
 
     scene bg class at bg_fit with dissolve
 
-    thought "Back At School"
-    thought "Joo-in was still Joo-in."
-    thought "Still watching everything..."
-    thought "But he'd started doing something new."
-    thought "Telling me things."
+    thought "Back at school."
+    thought "Jooin was still Jooin. Still watching everything."
+    thought "But he'd started telling me things. Small things. Real things."
 
-    woo "I failed the History quiz."
-    soo "I know.. I saw your face."
+    woo "I failed the history quiz."
+    soo "I know. I saw your face."
     woo "Was it that obvious?"
     soo "Only to me."
-    woo "..."
     woo "I hate that you can do that."
     soo "Read you?"
     woo "Yeah."
     soo "No you don't."
     woo "..."
-    woo "No, I don't."
+    woo "No. I don't."
 
-    thought "He said it like.."
-    thought "..It was the whole point."
+    thought "He said it like admitting it was the whole point."
 
     woo "Soo-ah."
     soo "Mm?"
-    woo "Thanks."
-    woo "For bothering me."
+    woo "Thanks. For bothering."
     soo "Anytime."
-    woo "..."
-    woo "I mean it."
-    woo "Anytime."
+    woo "I mean it. Anytime."
+
+    thought "He said it like a promise. I believed him."
 
     scene black with dissolve
     jump final_chapter
+
 
 label route_sara_school:
 
     scene bg school at bg_fit with dissolve
 
-    thought "Back At School"
+    thought "Back at school."
     thought "Sara and I fell back into something."
-    thought "Not what we were before.."
-    thought "..I didn't know what that was."
-    thought "Something new."
-    thought "Built on top of the old thing."
-    thought "Like Min-ho said."
+    thought "Not what we were before. Something new."
+    thought "Built on top of the old thing. Like Min-ho said."
 
     sara "I saved you a seat."
     soo "I see that."
     sara "Right next to me."
     soo "I see that too."
-    sara "..."
     sara "Just making sure you noticed."
     soo "I noticed."
 
-    thought "She smiled."
-    thought "I sat down."
-    thought "It was easy."
+    thought "She smiled. I sat down. It was easy."
 
     sara "Hey Soo-ah."
     soo "Yeah?"
@@ -176,12 +145,10 @@ label route_sara_school:
     soo "..."
     soo "Me too."
 
-    thought "She opened her notebook."
-    thought "I opened mine."
+    thought "She opened her notebook. I opened mine."
     thought "The teacher started talking."
-    thought "And for the firsttime in a long time I wasn't watching from a distance."
-    thought "I was just there."
-    thought "Right here."
+    thought "And for the first time in a long time I wasn't watching from a distance."
+    thought "I was just here."
 
-    scene black with with dissolve
+    scene black with dissolve
     jump final_chapter

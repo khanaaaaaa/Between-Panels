@@ -12,27 +12,35 @@ label prologue:
     show sooneutralquiet at center_char with dissolve
 
     mom "Soo-ah! You're going to be late!"
+    hide sooneutralquiet
+    show sooneutraltalk at center_char
     soo "Mom, one second—"
+    hide sooneutraltalk
+    show sooneutralquiet at center_char
     mom "SOO-AH. NOW."
+    hide sooneutralquiet
+    show sooneutraltalk at center_char
     soo "I'M GOING!"
 
-    hide sooneutralquiet
+    hide sooneutraltalk
+    show sooneutralquiet at center_char
 
     thought "Okay. It's probably just the morning light. Everything is fine."
     thought "...Right?"
-
+    
     scene bg hallway at bg_fit with dissolve
 
     thought "It was not fine."
     thought "The hallway looked like the establishing shot of a romance drama. Cherry blossoms through the window. In March."
-    thought "CHERRY BLOSSOMS. IN MARCH."
-
+    hide sooneutralquiet
     show sarasmilequiet at center_char with dissolve
 
-    thought "And then I saw her. Standing right outside my door like she'd been waiting."
+    thought "And then I saw her."
+    thought "Standing right outside my door like she'd been waiting."
     thought "Pale skin. Blond hair to her waist. Eyes like a clear sky."
-    thought "I have never seen this person in my entire life."
+    thought "I have never seen this beautiful of a person in my entire life."
 
+    hide sarasmilequiet
     show sarasmiletalk at center_char
 
     sara "Soo-ah. We're going to be late."
@@ -42,12 +50,9 @@ label prologue:
 
     thought "Oh no. Her voice is pretty too. Of course it is."
 
-    show sooneutraltalk at center_char
-
     soo "WAIT. Who are you?!"
+    soo "How do you know my name?"
 
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
     hide sarasmilequiet
     show saraneutraltalk at center_char
 
@@ -59,25 +64,30 @@ label prologue:
     thought "Sara. Sara Lee. I have never heard that name in my fourteen years of life."
     thought "And yet she's looking at me like I should know exactly who she is."
 
+    hide sarasmilequiet
     show saraneutraltalk at center_char
 
     sara "I know this is strange. Let's just get to school first, okay?"
 
     hide saraneutraltalk
-    show saradisturbed at center_char
+    show saraquiet at center_char
 
     thought "She made a face. Sad and delicate. The kind that only exists in fiction."
     thought "I felt guilty. I don't even know her and I felt guilty."
 
-    hide saradisturbed
-    show sooneutraltalk at center_char
+    hide saraquiet
+    show saraneutraltalk at center_char
 
     soo "...Fine."
 
-    hide sooneutraltalk
+    hide saraneutraltalk
+    show saraquiet at center_char
 
     thought "I am going to regret this. I already regret this."
 
+    hide saraquiet
+
+    scene black
     scene bg school at bg_fit with dissolve
 
     thought "Ju Jang Middle School. I've walked past it a hundred times."
@@ -87,39 +97,47 @@ label prologue:
     show saraneutraltalk at center_char with dissolve
 
     sara "Soo-ah, you've gone pale."
+    hide saraneutraltalk
+    show saraquiet at center_char
     soo "Does this school look normal to you?"
+    hide saraquiet
+    show saraneutraltalk at center_char
     sara "What do you mean? It looks the same as always."
 
     hide saraneutraltalk
-    hide sarasmilequiet
+    show saraquiet at center_char
 
     thought "The same as always. Right. March 2nd. Entrance ceremony day."
     thought "My life has started to look exactly like the first chapter of a web novel."
     thought "And I, Kang Soo-ah, am apparently in it. Great."
 
-    show sooneutraltalk at center_char
-
     soo "Never mind. I need some air."
 
-    hide sooneutraltalk
-
-    show sarasmiletalk at center_char with dissolve
+    hide saraquiet
+    show saraneutraltalk at center_char with dissolve
 
     sara "W-wait—!"
 
-    hide sarasmiletalk
+    hide saraneutraltalk
 
     scene bg school_gate at bg_fit with dissolve
+
+    show sooneutralquiet
 
     thought "I walked out through the front gate to clear my head. And immediately regretted it."
 
     "A sketchbook hit the ground right in front of me. Pages fanned open."
 
+    scene bg floor at bg_fit with dissolve
+    hide sooneutralquiet
+    thought "..."
+    scene bg school_gate at bg_fit with dissolve
+    show sooneutralquiet at center_char
     thought "I looked up. A boy was sitting in the cherry blossom tree. Just sitting there. Sketching."
     thought "Like that was a completely normal thing to do."
 
-    show sooneutralquiet at center_char with dissolve
-    show jihoquiet at right_char with dissolve
+    hide sooneutralquiet
+    show jihoquiet at center_char with dissolve
 
     soo "H-hey! You dropped your—"
 
@@ -127,12 +145,12 @@ label prologue:
     thought "Why do people like this keep appearing in front of me today."
 
     hide jihoquiet
-    show jihotalking at right_char
+    show jihoangrytalking at center_char
 
     jiho "You're picking that up, right?"
 
-    hide jihotalking
-    show jihoquiet at right_char
+    hide jihoangrytalking
+    show jihoquiet at center_char
 
     show sooneutraltalk at center_char
 
@@ -148,10 +166,13 @@ label prologue:
     $ add_observation("Ji-ho", "Sitting in a tree on day one. The open page had a drawing of a girl in my uniform.")
 
     hide jihoquiet
-    show npcquiet at left_char with dissolve
+    show npctalking at center_char with dissolve
 
     npc "Oh my god. She touched Ji-ho's sketchbook."
     npc "Does she have a death wish?!"
+
+    hide npctalking
+    show npcquiet at center_char
 
     thought "I PICKED IT UP OFF THE GROUND—"
 
