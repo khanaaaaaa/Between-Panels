@@ -3,11 +3,13 @@ label chapter_2_extras:
     scene bg class at bg_fit with dissolve
 
     show sooneutralquiet at center_char with dissolve
-    show chunyeon at right_char with dissolve
 
     thought "Chun-young sat two seats ahead of me."
     thought "He never turned around."
     thought "But I kept catching him looking at the board like he was somewhere else entirely."
+
+    hide sooneutralquiet
+    show eunhyeong at center_char with dissolve
 
     chunyeon "Hey."
     soo "...Me?"
@@ -25,11 +27,11 @@ label chapter_2_extras:
 
     $ add_observation("Chun-young", "He noticed me watching. Said most people pretend they weren't.")
 
-    hide chunyeon
+    hide eunhyeong
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show eunhyeong at right_char with dissolve
+    show eunhyeong at center_char with dissolve
 
     thought "Eunhyeong was the easiest person in the building to be around."
     thought "Which made me suspicious of him immediately."
@@ -69,20 +71,38 @@ label chapter_2_extras:
 
     scene bg class at bg_fit with dissolve
 
-    show yeomin at right_char with dissolve
     show sooneutralquiet at center_char with dissolve
 
     thought "Yeo-min. I'd been avoiding thinking about her."
     thought "Which was ironic given the whole situation."
 
+    hide sooneutralquiet
+    show yeomintalk at center_char with dissolve
+
     yeomin "You've been weird lately."
     soo "I've always been weird."
+
+    hide yeomintalk
+    show yeomin at center_char
+
     yeomin "Weirder than usual."
     yeomin "Is it about Sara?"
     soo "..."
+
+    hide yeomin
+    show yeomintalk at center_char
+
     yeomin "You've been sitting with her again."
     soo "Yeah."
+
+    hide yeomintalk
+    show yeomin at center_char
+
     yeomin "..."
+
+    hide yeomin
+    show yeomintalk at center_char
+
     yeomin "Okay. I'm not going to make it a thing."
     yeomin "I just — I know I wasn't always nice about her."
     yeomin "That wasn't fair."
@@ -96,7 +116,6 @@ label chapter_2_extras:
     thought "It wasn't a big conversation. But it was honest."
     thought "That counted for something."
 
-    hide yeomin
-    hide sooneutralquiet
+    hide yeomintalk
 
     jump chapter_3

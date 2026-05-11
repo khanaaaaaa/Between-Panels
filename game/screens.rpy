@@ -513,10 +513,12 @@ screen say(who, what):
             text_style "skip_button_text"
 
         textbutton "✿ skip":
-            action Skip()
+            action Skip(fast=False, confirm=False)
+            xalign 0.98
+            yalign 0.02
             padding (16, 8, 16, 8)
             background Frame(Solid("#c9748f"), 20, 20, 20, 20)
-            hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
             text_style "skip_button_text"
 
         textbutton "✿ skip":

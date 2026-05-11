@@ -248,7 +248,7 @@ label prologue:
     scene bg staff_room at bg_fit with dissolve
     hide woosmile
 
-    show teacherquiet at center_char with dissolve
+    show teacherquiet at center_charr with dissolve
 
     woo "Excuse us — this student doesn't know her class."
     teacher "Kang Soo-ah? Class 4. Head over with the class president — Eunhyeong!"
@@ -264,7 +264,7 @@ label prologue:
 
     hide eunhyeong
 
-    thought "Red hair. Of course."
+    thought "Blue hair. Of course."
 
     scene bg class at bg_fit with dissolve
 

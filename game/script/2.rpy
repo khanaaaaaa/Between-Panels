@@ -4,7 +4,7 @@ label chapter_one:
 
     show screen chapter_card("Chapter 1", "Everyone Is Suspiciously Good Looking")
 
-    show teachertalking at center_char with dissolve
+    show teachertalking at center_charr with dissolve
 
     teacher "Alright, settle down. I know none of you are going to listen anyway."
 
