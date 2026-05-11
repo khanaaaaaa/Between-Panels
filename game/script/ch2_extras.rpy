@@ -1,60 +1,75 @@
 label chapter_2_extras:
 
-    thought "Chun-young sat two seats ahead of he."
+    scene bg class at bg_fit with dissolve
+
+    show sooneutralquiet at center_char with dissolve
+    show chunyeon at right_char with dissolve
+
+    thought "Chun-young sat two seats ahead of me."
     thought "He never turned around."
-    thought "But I caught him lookung at the board like he was somewhere else entirely."
+    thought "But I kept catching him looking at the board like he was somewhere else entirely."
 
-    chungyeon "Hey."
-    soo "..Me?"
-    chungyeon "You were watching me just now."
+    chunyeon "Hey."
+    soo "...Me?"
+    chunyeon "You were watching me just now."
     soo "I watch everyone."
-    chungyeon "..."
-    cungyeon "That's a strange thing to admit."
+    chunyeon "..."
+    chunyeon "That's a strange thing to admit."
     soo "Is it?"
-    chungyeon "Most people pretend they weren't."
+    chunyeon "Most people pretend they weren't."
     soo "That seems exhausting."
-    chungyeon "..."
+    chunyeon "..."
 
-    thought "He turned back to the board."
-    thought "But he was almost smiling."
+    thought "He turned back to the board. But he was almost smiling."
     thought "I filed that away."
 
-    $ add_observation("Chun-young", "He noticed me watching.")
+    $ add_observation("Chun-young", "He noticed me watching. Said most people pretend they weren't.")
 
-    thought "Eunhyeong was the easiet person in the building to be around."
-    thought "Which made me suspicious of him immdeiately."
-    thought "Nobody is that comfortable with everyobe."
-    thought "Nobody."
+    hide chunyeon
+
+    scene bg school_hallway at bg_fit with dissolve
+
+    show eunhyeong at right_char with dissolve
+
+    thought "Eunhyeong was the easiest person in the building to be around."
+    thought "Which made me suspicious of him immediately."
+    thought "Nobody is that comfortable with everyone. Nobody."
 
     eunhyeong "You look like you're doing math."
     soo "I'm always doing math."
-    eunhyeong "Figuring out what people actually mean versus what they say."
+    eunhyeong "What kind?"
     soo "Figuring out what people actually mean versus what they say."
     eunhyeong "..."
+    eunhyeong "And what do I actually mean?"
+    soo "I haven't figured that out yet."
     eunhyeong "Let me know when you do."
 
-    thought "He said it lightly."
-    thought "But there was something underneath it."
-    thought "Like he was genuinely curous what I'd find."
+    thought "He said it lightly. But there was something underneath it."
+    thought "Like he was genuinely curious what I'd find."
 
     $ add_observation("Eunhyeong", "He asked what he actually means. Said let me know when you figure it out.")
 
-    thought "Yeo-min."
-    thought "I'd been avoiding thinking about her."
+    hide eunhyeong
+
+    scene bg class at bg_fit with dissolve
+
+    show yeomin at right_char with dissolve
+    show sooneutralquiet at center_char with dissolve
+
+    thought "Yeo-min. I'd been avoiding thinking about her."
     thought "Which was ironic given the whole situation."
 
     yeomin "You've been weird lately."
     soo "I've always been weird."
-    yeomin "Werirder than usual."
+    yeomin "Weirder than usual."
     yeomin "Is it about Sara?"
     soo "..."
     yeomin "You've been sitting with her again."
     soo "Yeah."
     yeomin "..."
-    yeomin "Okay."
-    soo "Okay?"
-    yeomin "I'm not going to make it a thing."
-    yeomin "I just.. I know I wasn't always nice about her."
+    yeomin "Okay. I'm not going to make it a thing."
+    yeomin "I just — I know I wasn't always nice about her."
+    yeomin "That wasn't fair."
     soo "..."
     soo "No. It wasn't."
     yeomin "Are we still okay?"
@@ -62,8 +77,10 @@ label chapter_2_extras:
     soo "Yeah. We're okay."
 
     thought "She nodded and went back to her phone."
-    thought "It wasn't a big conversation."
-    thought "But it was honest."
+    thought "It wasn't a big conversation. But it was honest."
     thought "That counted for something."
+
+    hide yeomin
+    hide sooneutralquiet
 
     jump chapter_3
