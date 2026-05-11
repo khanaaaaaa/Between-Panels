@@ -5,7 +5,6 @@ label chapter_7:
     show screen chapter_card("Chapter 7", "The Moment Before Paths Split")
 
     show sarasmilequiet at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     soo "Sara. I've been meaning to say something."
     sara "Okay."
@@ -20,7 +19,6 @@ label chapter_7:
     $ add_observation("Sara", "I told her I'm choosing to be here. She said I hear you.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     "The bus ride took two hours. City to hills. Hills to trees."
     "Soo-ah watched the scenery and thought about nothing in particular."
@@ -38,7 +36,6 @@ label chapter_7:
     "Day one. Cabins assigned. First evening free."
 
     show woosmile at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     thought "Jooin was sitting on a rock doing absolutely nothing. No phone. No book."
     thought "I almost didn't recognize him."
@@ -61,12 +58,10 @@ label chapter_7:
     thought "He smiled. The quiet one. The one I'd learned to look for."
 
     hide woosmile
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
-    show eunhyeong at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show eunhyeong at center_char with dissolve
 
     thought "Eunhyeong had a deck of cards and no one to play with. Which seemed wrong."
 
@@ -91,12 +86,10 @@ label chapter_7:
     thought "He said it like a fact. I believed him."
 
     hide eunhyeong
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
-    show chunyeon at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show chunyeon at center_char with dissolve
 
     thought "Chun-young was at the lake. Shoes off. Feet in the water."
     thought "He always looked carefully placed. This was different. He just looked like a person."
@@ -117,12 +110,10 @@ label chapter_7:
     chunyeon "Yeah. I think you do."
 
     hide chunyeon
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
-    show jihoquiet at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show jihoquiet at center_char with dissolve
 
     thought "Ji-ho was at the overlook. Sketchbook open. Not drawing. Just looking."
     thought "I sat on the railing beside him. Not close. Just nearby. He didn't move away."
@@ -142,12 +133,10 @@ label chapter_7:
     thought "That was number six. I was still counting."
 
     hide jihoquiet
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
     show sarasmilequiet at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     thought "Sara was sitting outside the cabin. Knees pulled up. Hair loose."
     thought "She looked younger like this. More like the Sara I was supposed to remember."
@@ -160,6 +149,21 @@ label chapter_7:
     soo "Then don't."
     sara "Yeah."
 
+    menu:
+        "Take a photo together anyway.":
+            $ affection_sara += 2
+            soo "Here. One photo. Then we stop."
+            sara "..."
+            sara "Okay. One."
+            thought "She leaned into me slightly."
+            thought "I took the photo."
+            thought "I didn't look at it. I didn't need to."
+
+        "Just sit with her.":
+            $ affection_sara += 1
+            thought "I didn't say anything. Neither did she."
+            thought "The light kept changing. Neither of us moved."
+
     thought "We sat until it got dark. Not saying much. Not needing to."
 
     sara "I'm glad you said something this morning."
@@ -171,7 +175,6 @@ label chapter_7:
     $ add_observation("Sara", "She said she missed me even when I was right there. I said I'm here now.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene black with dissolve
 

@@ -14,24 +14,25 @@ label chapter_one:
     thought "First day of class. I sat in the middle. Neutral territory."
     thought "I was going to be invisible. That was the plan."
 
-    show sarasmilequiet at left_char with dissolve
+    hide sooneutralquiet
+    show sarasmilequiet at center_char with dissolve
 
     npc1 "That's Sara Lee, right? She's so pretty..."
     npc1 "I heard she scored first place on the entrance exam."
 
     hide sarasmilequiet
-    show wooquiet at right_char with dissolve
+    show wooquiet at center_char with dissolve
 
     thought "Woo Ju-in. First year of high school and he already looks like that. How."
 
     hide wooquiet
-    show woosmile at right_char
+    show woosmile at center_char
 
     npc1 "ACK— HE SMILED AT ME—"
     npc2 "NO HE SMILED AT ME—"
 
     hide woosmile
-    show sooneutralquiet at center_char
+    show sooneutralquiet at center_char with dissolve
 
     thought "Any other day I'd be reacting the same way."
     thought "But nobody finds it strange. The hair colors. The eye colors. This class looks like a casting call."
@@ -45,7 +46,8 @@ label chapter_one:
     thought "Her number is saved in my phone. Under a heart."
     thought "I have never saved anyone's number under a heart in my life."
 
-    show npcquiet at left_char with dissolve
+    hide sooneutralquiet
+    show npcquiet at center_char with dissolve
 
     npc1 "Hey — you came in with those three this morning, right? Do you know them?"
     soo "No. We literally just met at the gate."
@@ -62,7 +64,7 @@ label chapter_one:
     thought "If this were a novel she'd be the protagonist. Which means I'm the side character."
     thought "Actually that's fine. Side characters go home at a normal time and eat dinner."
 
-    show npcquiet at left_char with dissolve
+    show npcquiet at center_char with dissolve
 
     npc1 "What should we call those four? They're always together."
     npc2 "The Four Kings? The Four Stars?"
@@ -75,8 +77,7 @@ label chapter_one:
 
     thought "The Panel Kings. I cannot believe I am living inside a story where that just happened."
 
-    hide sooneutralquiet
-    show sooneutraltalk at center_char
+    show sooneutraltalk at center_char with dissolve
 
     soo "...Pfft."
 

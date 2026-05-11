@@ -29,7 +29,7 @@ label chapter_4_extras:
     scene bg school_hallway at bg_fit with dissolve
 
     show jihoquiet at right_char with dissolve
-    show woosmile at left_char with dissolve
+    show woosmile at center_char with dissolve
     show minhoquiet at center_char with dissolve
 
     thought "The four of them were in the same room at the same time."
@@ -73,6 +73,22 @@ label chapter_4_extras:
     minho "She's observing."
     chunyeon "..."
     chunyeon "She's right."
+
+    menu:
+        "\"Thank you, Chun-young.\"":
+            $ affection_chunyeon += 2
+            soo "Thank you, Chun-young."
+            chunyeon "..."
+            woo "She's playing favorites!"
+            jiho "She's not wrong."
+            thought "Ji-ho said that. Out loud. To other people."
+            thought "I need a moment."
+
+        "Laugh and say nothing.":
+            $ affection_chunyeon += 1
+            thought "I just laughed."
+            thought "Chun-young looked at me."
+            thought "Something warm in it. Brief. But there."
 
     thought "They all looked at Chun-young. He went back to eating."
     thought "The conversation ended."

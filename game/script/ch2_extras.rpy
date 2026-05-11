@@ -44,6 +44,22 @@ label chapter_2_extras:
     soo "I haven't figured that out yet."
     eunhyeong "Let me know when you do."
 
+    menu:
+        "\"What if I already have?\"":
+            $ affection_eunhyeong += 2
+            soo "What if I already have?"
+            eunhyeong "..."
+            eunhyeong "Then I'd say you're more perceptive than most."
+            thought "He said it carefully. Like he was deciding how much to give away."
+
+        "\"I'll let you know.\"":
+            $ affection_eunhyeong += 1
+            soo "I'll let you know."
+            eunhyeong "..."
+            eunhyeong "I'll be waiting."
+            thought "He smiled. Easy and uncomplicated."
+            thought "I still didn't fully trust it."
+
     thought "He said it lightly. But there was something underneath it."
     thought "Like he was genuinely curious what I'd find."
 

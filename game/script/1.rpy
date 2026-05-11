@@ -141,12 +141,8 @@ label prologue:
 
     hide jihoangrytalking
     show jihoquiet at center_char
-    show sooneutraltalk at center_char
 
     soo "S-sorry! Yes!"
-
-    hide sooneutraltalk
-    show sooneutralquiet at center_char
 
     thought "I picked it up. Then made the mistake of looking at the open page."
     thought "A drawing of the courtyard. The gates. The cherry blossoms."
@@ -166,7 +162,7 @@ label prologue:
     thought "I PICKED IT UP OFF THE GROUND—"
 
     hide npcquiet
-    show npctalking at left_char
+    show npctalking at center_char
 
     npc "YOU. Don't move. You touched his things without permission."
 
@@ -186,7 +182,7 @@ label prologue:
     soo "PFFT—"
 
     hide sooneutraltalk
-    show npctalking at left_char with dissolve
+    show npctalking at center_char with dissolve
 
     npc "Did you just... laugh?"
 
@@ -196,18 +192,17 @@ label prologue:
     thought "RUN. I refuse to be the protagonist of a web novel."
     thought "I have common sense. No special powers. I mind my own business."
 
-    show npcquiet at left_char with dissolve
+    hide sooneutralquiet
+    show npcquiet at center_char with dissolve
 
     thought "Silver hair. A boy with actual silver hair just stepped out of a car. WHAT."
-
-    show npcquiet at right_char with dissolve
-
-    thought "And another one. Why are middle schoolers built like this."
 
     npc "It's alright, sir! I'll look after Min-ho!"
 
     hide npcquiet
-    show minhoquiet at right_char with dissolve
+    show minhoquiet at center_char with dissolve
+
+    thought "And another one. Why are middle schoolers built like this."
 
     minho "I don't need to be looked after."
 
@@ -222,20 +217,19 @@ label prologue:
     soo "I just needed some air."
     woo "Then let's go in together!"
 
-    show minhoquiet at right_char with dissolve
+    hide wooquiet
+    show minhoquiet at center_char with dissolve
 
     woo "Oh! And this is Min-ho. What's your name?"
     soo "Kang Soo-ah."
 
     hide minhoquiet
-    show minhotalking at right_char
+    show minhotalking at center_char
 
     minho "Let's go. We'll be late."
 
     hide minhotalking
-    show minhoquiet at right_char
-    hide wooquiet
-    show woosmile at center_char
+    show woosmile at center_char with dissolve
 
     woo "Come on, Soo-ah!"
     soo "O-okay..."
@@ -244,7 +238,6 @@ label prologue:
 
     scene bg school_hallway at bg_fit with dissolve
     hide woosmile
-    hide minhoquiet
 
     show woosmile at center_char with dissolve
 
@@ -255,8 +248,7 @@ label prologue:
     scene bg staff_room at bg_fit with dissolve
     hide woosmile
 
-    show woosmile at center_char with dissolve
-    show teacherquiet at right_char with dissolve
+    show teacherquiet at center_char with dissolve
 
     woo "Excuse us — this student doesn't know her class."
     teacher "Kang Soo-ah? Class 4. Head over with the class president — Eunhyeong!"
@@ -266,8 +258,7 @@ label prologue:
     thought "Class 4. Same as Woo Ju-in. And Min-ho. And probably Sara."
     thought "Every single person I've met today is going to be in my class. I can feel it."
 
-    hide woosmile
-    show eunhyeong at right_char with dissolve
+    show eunhyeong at center_char with dissolve
 
     eunhyeong "Oh — you're all in class 4? I'm Kwon Eunhyeong. Nice to meet you."
 

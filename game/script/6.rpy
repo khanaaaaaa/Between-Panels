@@ -13,8 +13,7 @@ label chapter_5:
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show sooneutralquiet at center_char with dissolve
-    show sarasmilequiet at left_char with dissolve
+    show sarasmilequiet at center_char with dissolve
 
     thought "Three years ago I decided to avoid Sara. Not dramatically. Just quietly."
     thought "I started leaving earlier. Taking different routes. Sitting somewhere new at lunch."
@@ -29,12 +28,10 @@ label chapter_5:
     thought "She was giving me room to come back. And I used it to walk away."
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg class at bg_fit with dissolve
 
-    show yeomin at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show yeomin at center_char with dissolve
 
     thought "Baek Yeo-min. Easy smile, comfortable energy. No history, no weight."
     thought "Nobody waiting for me to remember something I didn't do."
@@ -45,8 +42,7 @@ label chapter_5:
     thought "I told myself it was temporary. I never asked if Sara understood."
 
     hide yeomin
-
-    show sarasmilequiet at left_char with dissolve
+    show sarasmilequiet at center_char with dissolve
 
     thought "She watched me cross the room to sit with Yeo-min. I saw her. I didn't turn around."
     thought "That's how most things break. Not with a fight. With a direction you keep choosing."
@@ -54,14 +50,20 @@ label chapter_5:
     $ add_observation("Sara", "Three years ago I walked away and didn't turn around. She watched me go.")
 
     hide sarasmilequiet
-
-    show chunyeon at right_char with dissolve
-    show sarasmilequiet at left_char with dissolve
+    show chunyeon at center_char with dissolve
 
     thought "A few days later Chun-young walked up to Sara's desk."
 
     chunyeon "Do you know the answer to question six?"
+
+    hide chunyeon
+    show sarasmilequiet at center_char
+
     sara "Oh. It's the second law applied to the variable — here."
+
+    hide sarasmilequiet
+    show chunyeon at center_char
+
     chunyeon "Right."
 
     thought "He smiled. Small and brief. Like it surprised him."
@@ -73,16 +75,13 @@ label chapter_5:
     $ add_observation("Chun-young", "He smiled at Sara when she helped him. Small. Like it surprised him.")
 
     hide chunyeon
-    hide sarasmilequiet
-
-    show yeomin at right_char with dissolve
+    show yeomin at center_char with dissolve
 
     yeomin "Want to go to the shop after school?"
     soo "Yeah, sure."
 
     hide yeomin
-
-    show sarasmilequiet at left_char with dissolve
+    show sarasmilequiet at center_char with dissolve
 
     sara "Soo-ah...?"
 
@@ -91,7 +90,6 @@ label chapter_5:
     $ add_observation("Sara", "She watched me leave with Yeo-min. I saw her. I kept walking.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg class at bg_fit with dissolve
 
@@ -101,7 +99,8 @@ label chapter_5:
 
     thought "I knew Yeo-min didn't like Sara. Hearing it out loud felt worse."
 
-    show sarasmilequiet at left_char with dissolve
+    hide sooneutralquiet
+    show sarasmilequiet at center_char with dissolve
 
     sara "Soo-ah, I—"
     soo "Sorry. I need to finish these problems."
@@ -110,17 +109,27 @@ label chapter_5:
     thought "She stopped talking. The silence between us was heavier than before. I'd made it that way."
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show jihoquiet at right_char with dissolve
-    show woosmile at left_char with dissolve
+    show woosmile at center_char with dissolve
 
     woo "You keep looking at Soo-ah and Sara during break."
+
+    hide woosmile
+    show jihoquiet at center_char with dissolve
+
     jiho "They're hard to ignore. Soo-ah is being cold."
     jiho "Sara keeps trying and Soo-ah just pushes her away."
+
+    hide jihoquiet
+    show woosmile at center_char
+
     woo "Doesn't she look scared to you? More than cold."
+
+    hide woosmile
+    show jihoquiet at center_char
+
     jiho "..."
     jiho "Maybe."
 
@@ -131,7 +140,6 @@ label chapter_5:
     $ add_observation("Woo Ju-in", "He said I looked scared more than cold. He was right.")
 
     hide jihoquiet
-    hide woosmile
 
     scene bg room at bg_fit with dissolve
 
@@ -192,8 +200,7 @@ label chapter_6:
 
     scene bg school at bg_fit with dissolve
 
-    show sarasmilequiet at left_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show sarasmilequiet at center_char with dissolve
 
     sara "You look tired."
     soo "Didn't sleep well."
@@ -208,12 +215,10 @@ label chapter_6:
     $ add_observation("Sara", "I said I'm thinking about old things. She said eat your lunch. She's always waiting.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show jihoquiet at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show jihoquiet at center_char with dissolve
 
     thought "Ji-ho was in the library. I sat down without asking. He made space without being asked."
     thought "We'd developed a rhythm. Neither of us named it."
@@ -234,12 +239,10 @@ label chapter_6:
     $ add_observation("Ji-ho", "He said stop thinking about old things. Then said he knows it's not that simple.")
 
     hide jihoquiet
-    hide sooneutralquiet
 
     scene bg class at bg_fit with dissolve
 
     show woosmile at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     woo "You're usually quiet and watching. Today you're just quiet."
     soo "Is there a difference?"
@@ -253,12 +256,10 @@ label chapter_6:
     $ add_observation("Woo Ju-in", "He said fixing things quietly doesn't reach people. Start small and don't stop.")
 
     hide woosmile
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
-    show minhoquiet at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show minhoquiet at center_char with dissolve
 
     thought "Min-ho was reading on the steps. I sat beside him."
 
@@ -273,7 +274,6 @@ label chapter_6:
     $ add_observation("Kang Min-ho", "Pretending costs more in the long run. He shifted closer without saying anything.")
 
     hide minhoquiet
-    hide sooneutralquiet
 
     scene bg room at bg_fit with dissolve
 

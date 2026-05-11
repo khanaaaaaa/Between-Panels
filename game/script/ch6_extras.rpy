@@ -77,6 +77,27 @@ label chapter_6_extras:
     jiho "..."
     jiho "Because it keeps being true."
 
+    menu:
+        "\"Then draw me properly. Ask first.\"":
+            $ affection_jiho += 3
+            soo "Then draw me properly next time. Ask first."
+            jiho "..."
+            jiho "Can I draw you?"
+            soo "..."
+            soo "Yes."
+            thought "He opened the sketchbook."
+            thought "I stood very still."
+            thought "I don't know how long it took. I didn't mind."
+
+        "\"Keep the drawing.\"":
+            $ affection_jiho += 2
+            soo "Keep it. The one from the book."
+            jiho "..."
+            jiho "I have copies."
+            soo "Of course you do."
+            jiho "..."
+            thought "He almost smiled. Number seven."
+
     thought "I kept the drawing. I didn't tell him that."
     thought "But I think he knew."
 

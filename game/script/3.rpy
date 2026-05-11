@@ -11,7 +11,7 @@ label chapter_2:
     thought "And then."
 
     hide sooneutralquiet
-    show jihoquiet at right_char with dissolve
+    show jihoquiet at center_char with dissolve
 
     "The classroom went quiet. Not the polite kind."
 
@@ -19,44 +19,62 @@ label chapter_2:
 
     thought "Oh no."
 
-    show saraneutraltalk at left_char with dissolve
+    hide jihoquiet
+    show saraneutraltalk at center_char with dissolve
 
     sara "That's me."
-    jiho "You scored first place. Above me."
-    sara "...Yes."
-    jiho "Don't get comfortable. I won't go easy on you next time."
 
     hide saraneutraltalk
-    show saradisturbed at left_char
+    show jihoquiet at center_char
+
+    jiho "You scored first place. Above me."
+
+    hide jihoquiet
+    show saraneutraltalk at center_char
+
+    sara "...Yes."
+
+    hide saraneutraltalk
+    show jihoquiet at center_char
+
+    jiho "Don't get comfortable. I won't go easy on you next time."
+
+    hide jihoquiet
+    show saradisturbed at center_char
 
     sara "Were you actually going easy on me?"
 
-    hide jihoquiet
-    show jihotalking at right_char
+    hide saradisturbed
+    show jihotalking at center_char
 
     jiho "Just wait and see."
 
     hide jihotalking
-    show jihoquiet at right_char
-    hide saradisturbed
 
     npc1 "Did she just talk back to Ji-ho?! He's going to destroy her on the next exam."
 
     thought "He just walks up to people and declares academic war. Who does that."
 
-    hide jihoquiet
-    show woosmile at right_char with dissolve
+    show woosmile at center_char with dissolve
 
     woo "You're the first person to ever talk back to Ji-ho like that! I'm Woo Ju-in. Let's be friends!"
 
-    show sarasmiletalk at left_char with dissolve
+    hide woosmile
+    show sarasmiletalk at center_char with dissolve
 
     sara "Ji-ho?"
+
+    hide sarasmiletalk
+    show woosmile at center_char
+
     woo "Eun Ji-ho. Don't worry about him — he's like that with everyone he finds interesting."
+
+    hide woosmile
+    show sarasmiletalk at center_char
+
     sara "...Interesting."
 
     hide sarasmiletalk
-    hide woosmile
 
     thought "He challenged her because he found her interesting. Such a male lead thing to do."
     thought "I need to be the least interesting person in this building."
@@ -71,7 +89,6 @@ label chapter_2:
     scene bg school_hallway at bg_fit with dissolve
 
     show saraneutraltalk at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     sara "Soo-ah. Let's walk home."
     soo "Oh. Yeah."
@@ -94,25 +111,35 @@ label chapter_2:
     sara "I thought when you said hi this morning it meant things were okay."
     sara "Was I wrong?"
 
-    thought "She's been waiting for an apology. And she's been patient about it. That's worse somehow."
+    menu:
+        "\"No. You weren't wrong. I'm sorry.\"":
+            $ affection_sara += 2
+            soo "No, you weren't wrong."
+            soo "I wasn't mad at you."
+            soo "I've just been in my head."
+            hide saradisturbed
+            show sarasmilequiet at center_char
+            sara "Really?"
+            soo "Really. Sorry if it seemed like I was pushing you away."
+            sara "That's a relief."
 
-    soo "No. You weren't wrong. I'm not mad at you. I've just been in my head."
+        "Stay quiet and look away.":
+            $ affection_sara += 1
+            soo "..."
+            hide saradisturbed
+            show saraquiet at center_char
+            sara "...Okay."
 
-    hide saradisturbed
     show sarasmilequiet at center_char
 
-    sara "Really?"
-    soo "Really. Sorry if it seemed like I was pushing you away."
-    sara "That's a relief."
     sara "You're my best friend, Soo-ah. I don't have another one."
 
-    thought "She said it so simply. Like it was just a fact."
+    thought "She said it so simply."
     thought "I felt something twist in my chest."
 
     $ add_observation("Sara", "She said I'm her only best friend. She's been patient this whole time.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg room at bg_fit with dissolve
 

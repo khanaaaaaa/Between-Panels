@@ -5,7 +5,6 @@ label chapter_4:
     show screen chapter_card("Chapter 4", "The People Are Real")
 
     show sarasmilequiet at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     thought "Third week. I started paying attention to the people, not the story."
 
@@ -24,12 +23,10 @@ label chapter_4:
     $ add_observation("Sara", "She brings two lunches every day. Gives the extra to whoever forgot. Today that was me.")
 
     hide sarasmilequiet
-    hide sooneutralquiet
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show minhoquiet at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show minhoquiet at center_char with dissolve
 
     thought "Min-ho. He doesn't invite conversation. Just completely self-contained."
     thought "He was reading by the window. I sat two seats away because the other spots felt wrong."
@@ -38,7 +35,22 @@ label chapter_4:
     soo "I'm thinking."
     minho "About what?"
     soo "Whether you ever get tired of being quiet."
-    minho "No. Quiet is easier than most people think. They just don't try it long enough."
+    minho "No. Quiet is easier than most people think."
+    minho "They just don't try it long enough."
+
+    menu:
+        "\"Can I try it? Sitting here quietly with you.\"":
+            $ affection_minho += 2
+            soo "Can I try it? Sitting here quietly?"
+            minho "..."
+            minho "You already are."
+            thought "Oh. I was."
+
+        "Say nothing and just stay.":
+            $ affection_minho += 1
+            thought "I didn't say anything."
+            thought "He didn't tell me to leave."
+            thought "That was enough."
 
     thought "He went back to his book. Didn't tell me to leave. I stayed."
     thought "Twenty minutes of silence. Most comfortable I'd felt all week."
@@ -46,12 +58,10 @@ label chapter_4:
     $ add_observation("Kang Min-ho", "Quiet is easier than people think. He didn't tell me to leave.")
 
     hide minhoquiet
-    hide sooneutralquiet
 
     scene bg class at bg_fit with dissolve
 
-    show sooneutralquiet at center_char with dissolve
-    show woosmile at right_char with dissolve
+    show woosmile at center_char with dissolve
 
     woo "Soo-ah, do you believe in fate?"
     soo "No."
@@ -67,12 +77,10 @@ label chapter_4:
     $ add_observation("Woo Ju-in", "He asked if I believe in fate and actually listened to the answer.")
 
     hide woosmile
-    hide sooneutralquiet
 
     scene bg school at bg_fit with dissolve
 
-    show jihoquiet at right_char with dissolve
-    show sooneutralquiet at center_char with dissolve
+    show jihoquiet at center_char with dissolve
 
     thought "Ji-ho was on the roof after school. I don't know why I went up there."
     thought "I was just walking and the stairs were there. That's my story."
@@ -84,16 +92,25 @@ label chapter_4:
     jiho "..."
     jiho "It should."
 
-    thought "Did Eun Ji-ho just make a joke. I'm not writing that down."
+    menu:
+        "\"Did you just make a joke?\"":
+            $ affection_jiho += 2
+            soo "Did you just make a joke?"
+            jiho "..."
+            jiho "No."
+            thought "He absolutely did."
+
+        "Pretend you didn't notice.":
+            $ affection_jiho += 1
+            thought "I decided not to acknowledge it."
+            thought "He looked almost relieved."
+            thought "Almost disappointed."
+
     thought "I'm absolutely writing that down."
 
     $ add_observation("Ji-ho", "He made a joke on the roof. Looked surprised that he did it.")
 
     soo "What are you drawing?"
-
-    hide jihoquiet
-    show jihoquiet at right_char
-
     jiho "The city."
     soo "Can I see?"
     jiho "No. It's not finished."
@@ -104,7 +121,6 @@ label chapter_4:
     thought "I think he knew that I knew."
 
     hide jihoquiet
-    hide sooneutralquiet
 
     scene black with dissolve
 

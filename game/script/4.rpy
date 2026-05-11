@@ -22,7 +22,8 @@ label chapter_3:
     thought "And me — Kang Soo-ah. Sara's best friend who started avoiding her for some reason."
     thought "I don't know why the original Soo-ah did that. But I'm the one living with it."
 
-    show npcquiet at left_char with dissolve
+    hide sooneutralquiet
+    show npcquiet at center_char with dissolve
 
     npc1 "Ji-ho and Sara had another exchange in the library."
     npc2 "Already?! It's only been two weeks!"
@@ -32,7 +33,7 @@ label chapter_3:
 
     thought "The rival-to-lovers pipeline is already activating. Right on schedule."
 
-    show jihoquiet at right_char with dissolve
+    show jihoquiet at center_char with dissolve
 
     thought "He walked past my desk without looking at me. Good. That's what I want."
     thought "...He glanced back. At me, not at Sara."
@@ -45,7 +46,6 @@ label chapter_3:
     scene bg school_hallway at bg_fit with dissolve
 
     show woosmile at center_char with dissolve
-    show sooneutralquiet at left_char with dissolve
 
     woo "Soo-ah! You always look like you're solving something."
     soo "I'm just walking."
@@ -59,7 +59,6 @@ label chapter_3:
     $ add_observation("Woo Ju-in", "He knew Sara was worried before she said anything. He just notices.")
 
     hide woosmile
-    hide sooneutralquiet
 
     scene bg room at bg_fit with dissolve
 
