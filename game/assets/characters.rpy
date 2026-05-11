@@ -88,5 +88,4 @@ default affection_jiho = 0
 default affection_woo = 0
 default affection_minho = 0
 default affection_sara = 0
-default affection_chunyeon = 0
 default affection_eunhyeong = 0

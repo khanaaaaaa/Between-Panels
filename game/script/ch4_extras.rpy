@@ -87,7 +87,7 @@ label chapter_4_extras:
     hide minhoquiet
     show eunhyeong at center_char with dissolve
 
-    chunyeon "Are you all going to do this the entire lunch break."
+    eunhyeong "Are you all going to do this the entire lunch break."
 
     hide eunhyeong
     show woosmile at center_char
@@ -104,7 +104,7 @@ label chapter_4_extras:
 
     minho "Probably."
 
-    thought "Chun-young sat down anyway. Which meant yes."
+    thought "Eunhyeong sat down anyway. Which meant yes."
 
     hide minhoquiet
     show sooneutralquiet at center_char with dissolve
@@ -129,13 +129,13 @@ label chapter_4_extras:
     hide minhoquiet
     show eunhyeong at center_char
 
-    chunyeon "..."
-    chunyeon "She's right."
+    eunhyeong "..."
+    eunhyeong "She's right."
 
     menu:
-        "\"Thank you, Chun-young.\"":
-            $ affection_chunyeon += 2
-            soo "Thank you, Chun-young."
+        "\"Thank you, Eunhyeong.\"":
+            $ affection_eunhyeong += 2
+            soo "Thank you, Eunhyeong."
             hide eunhyeong
             show woosmile at center_char
             woo "She's playing favorites!"
@@ -147,10 +147,10 @@ label chapter_4_extras:
             thought "I need a moment."
 
         "Laugh and say nothing.":
-            $ affection_chunyeon += 1
+            $ affection_eunhyeong += 1
             hide eunhyeong
             thought "I just laughed."
-            thought "Chun-young looked at me."
+            thought "Eunhyeong looked at me."
             thought "Something warm in it. Brief. But there."
 
     hide eunhyeong

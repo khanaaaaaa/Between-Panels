@@ -11,4 +11,4 @@ transform center_char:
 transform center_charr:
     xalign 0.5
     yalign 1.0
-    zoom: 1.8
+    zoom 1.8

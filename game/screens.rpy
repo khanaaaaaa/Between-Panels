@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -67,7 +67,6 @@ screen phone_notification(sender, message):
         ysize 480
         at phone_anim
 
-        ## phone body
         frame:
             xsize 280
             ysize 480
@@ -76,7 +75,6 @@ screen phone_notification(sender, message):
             background Solid("#1a1a1a")
             padding (0, 0, 0, 0)
 
-        ## rounded screen area
         frame:
             xsize 252
             ysize 420
@@ -85,7 +83,6 @@ screen phone_notification(sender, message):
             background Solid("#0d0d1a")
             padding (0, 0, 0, 0)
 
-        ## top notch
         frame:
             xsize 80
             ysize 18
@@ -94,7 +91,6 @@ screen phone_notification(sender, message):
             background Solid("#1a1a1a")
             padding (0, 0, 0, 0)
 
-        ## camera dot
         frame:
             xsize 10
             ysize 10
@@ -103,7 +99,6 @@ screen phone_notification(sender, message):
             background Solid("#333333")
             padding (0, 0, 0, 0)
 
-        ## status bar
         frame:
             xsize 252
             ysize 24
@@ -125,7 +120,6 @@ screen phone_notification(sender, message):
             size 10
             color "#aaaaaa"
 
-        ## notification card
         frame:
             xsize 232
             ysize 110
@@ -134,7 +128,6 @@ screen phone_notification(sender, message):
             background Solid("#1e1e2e")
             padding (0, 0, 0, 0)
 
-        ## app label bar
         frame:
             xsize 232
             ysize 24
@@ -156,7 +149,6 @@ screen phone_notification(sender, message):
             size 10
             color "#888888"
 
-        ## sender
         text "[sender]":
             xpos 32
             ypos 122
@@ -164,7 +156,6 @@ screen phone_notification(sender, message):
             color "#ffffff"
             bold True
 
-        ## message
         text "[message]":
             xpos 32
             ypos 146
@@ -172,7 +163,6 @@ screen phone_notification(sender, message):
             size 13
             color "#aaaaaa"
 
-        ## home bar
         frame:
             xsize 80
             ysize 5
@@ -181,7 +171,6 @@ screen phone_notification(sender, message):
             background Solid("#444444")
             padding (0, 0, 0, 0)
 
-        ## side power button
         frame:
             xsize 4
             ysize 50
@@ -190,7 +179,6 @@ screen phone_notification(sender, message):
             background Solid("#333333")
             padding (0, 0, 0, 0)
 
-        ## side volume buttons
         frame:
             xsize 4
             ysize 34
@@ -207,7 +195,6 @@ screen phone_notification(sender, message):
             background Solid("#333333")
             padding (0, 0, 0, 0)
 
-        ## red notification dot
         frame:
             xsize 16
             ysize 16
@@ -286,7 +273,7 @@ screen skip_indicator():
         yalign 0.0
         yoffset 12
         padding (20, 10, 20, 10)
-        background Frame(Solid("#fce4ec"), 30, 30, 30, 30)
+        background Frame(Solid("#1a0a14cc"), 30, 30, 30, 30)
 
         hbox:
             spacing 10
@@ -299,22 +286,22 @@ screen skip_indicator():
 
             text _("skipping"):
                 size 22
-                color "#c9748f"
+                color "#e8a0bf"
                 italic True
 
             text "✿" at delayed_blink(0.0, 0.9):
                 size 18
-                color "#e8a0bf"
+                color "#c9748f"
                 style "skip_triangle"
 
             text "✿" at delayed_blink(0.2, 0.9):
                 size 18
-                color "#e8a0bf"
+                color "#c9748f"
                 style "skip_triangle"
 
             text "✿" at delayed_blink(0.4, 0.9):
                 size 18
-                color "#e8a0bf"
+                color "#c9748f"
                 style "skip_triangle"
 
 transform delayed_blink(delay, period):
@@ -345,7 +332,7 @@ screen notify(message):
         xalign 0.98
         yalign 0.06
         padding (20, 12, 20, 12)
-        background Frame(Solid("#fce4ec"), 30, 30, 30, 30)
+        background Frame(Solid("#1a0a14cc"), 30, 30, 30, 30)
 
         hbox:
             spacing 10
@@ -355,7 +342,7 @@ screen notify(message):
                 color "#c9748f"
             text "[message!tq]":
                 size 22
-                color "#7a5c6e"
+                color "#f0d8e8"
 
     timer 3.0 action Hide("notify")
 
@@ -379,23 +366,24 @@ screen choice(items):
                 xminimum 700
                 xmaximum 1000
                 padding (50, 20, 50, 20)
-                background Frame(Solid("#fdf0f5"), 40, 40, 40, 40)
+                background Frame(Solid("#1a0a14dd"), 40, 40, 40, 40)
                 hover_background Frame(Solid("#c9748f"), 40, 40, 40, 40)
                 at choice_pop
 
                 hbox:
-                    xalign 0.0
+                    xalign 0.5
                     yalign 0.5
                     spacing 16
 
                     text "✦":
                         size 16
-                        color "#e8a0bf"
+                        color "#c9748f"
                         hover_color "#ffffff"
+                        yalign 0.5
 
                     text i.caption:
                         size 26
-                        color "#7a5c6e"
+                        color "#f0d8e8"
                         hover_color "#ffffff"
                         xalign 0.5
                         yalign 0.5
@@ -403,7 +391,7 @@ screen choice(items):
 
                     text "✦":
                         size 16
-                        color "#e8a0bf"
+                        color "#c9748f"
                         hover_color "#ffffff"
                         yalign 0.5
 
@@ -425,68 +413,51 @@ screen say(who, what):
 
     if who is None:
         frame at textbox_fadein:
-            xalign 0.5
-            yalign 0.82
-            xsize 1300
-            padding (60, 28, 60, 28)
-            background Frame(Solid("#2a1a2266"), 50, 50, 50, 50)
+            xalign 0.02
+            yalign 0.15
+            xsize 680
+            padding (28, 18, 28, 18)
+            background Frame(Solid("#2a0a1ecc"), 16, 16, 16, 16)
 
-            hbox:
-                xalign 0.5
-                yalign 0.5
-                spacing 20
-
-                text "✦":
-                    size 18
-                    color "#c9748f99"
-                    yalign 0.5
-
-                text what id "what":
-                    xalign 0.5
-                    yalign 0.5
-                    size 27
-                    color "#f0e0f0"
-                    italic True
-                    text_align 0.5
-                    xmaximum 1100
-
-                text "✦":
-                    size 18
-                    color "#c9748f99"
-                    yalign 0.5
+            text what id "what":
+                size 26
+                color "#f5d8e8"
+                italic True
+                xmaximum 620
+                line_spacing 8
+                outlines [(1, "#00000066", 0, 0)]
 
     else:
         frame at textbox_fadein:
             xalign 0.5
             yalign 1.0
             xfill True
-            ysize 210
-            padding (70, 30, 70, 30)
-            background Frame(Solid("#fdf4f7e6"), 0, 0, 0)
+            ysize 220
+            padding (80, 35, 80, 35)
+            background Frame(Solid("#0d0008f0"), 0, 0, 0)
 
-            fixed:
+            frame:
                 xsize 6
                 yfill True
                 xpos 0
                 ypos 0
-            frame:
-                xsize 6
-                yfill True
                 background Solid("#c9748f")
+                padding (0, 0, 0, 0)
 
             text what id "what":
                 xpos 30
-                ypos 50
+                ypos 40
                 xmaximum 1760
                 size 30
-                color "#3a2a32"
+                color "#f5e6f0"
                 line_spacing 10
                 adjust_spacing False
+                outlines [(2, "#00000088", 0, 0)]
 
             frame at textbox_fadein:
                 xpos 70
                 yalign 1.0
-                yoffset -178
+                yoffset -188
                 xsize None
                 ysize None
                 padding (28, 10, 28, 10)
@@ -508,23 +479,14 @@ screen say(who, what):
         textbutton "↩":
             action Rollback()
             padding (12, 8, 12, 8)
-            background Frame(Solid("#e8c4d4"), 20, 20, 20, 20)
+            background Frame(Solid("#3a1a2ecc"), 20, 20, 20, 20)
             hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
             text_style "skip_button_text"
 
         textbutton "✿ skip":
             action Skip(fast=False, confirm=False)
-            xalign 0.98
-            yalign 0.02
             padding (16, 8, 16, 8)
-            background Frame(Solid("#c9748f"), 20, 20, 20, 20)
-            hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
-            text_style "skip_button_text"
-
-        textbutton "✿ skip":
-            action Skip()
-            padding (16, 8, 16, 8)
-            background Frame(Solid("#c9748f"), 20, 20, 20, 20)
+            background Frame(Solid("#c9748fcc"), 20, 20, 20, 20)
             hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
             text_style "skip_button_text"
 
@@ -533,12 +495,13 @@ screen say(who, what):
         xalign 0.02
         yalign 0.02
         padding (16, 8, 16, 8)
-        background Frame(Solid("#f5e0ea"), 20, 20, 20, 20)
+        background Frame(Solid("#3a1a2ecc"), 20, 20, 20, 20)
+        hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
         text_style "notes_button_text"
 
 style notes_button_text:
     size 20
-    color "#c9748f"
+    color "#e8a0bf"
     bold True
     hover_color "#ffffff"
 
@@ -549,15 +512,16 @@ init python:
 style say_dialogue:
     xpos 30
     xsize 1760
-    ypos 50
+    ypos 40
     size 30
-    color "#3a2a32"
+    color "#f5e6f0"
     line_spacing 10
     adjust_spacing False
+    outlines [(2, "#00000088", 0, 0)]
 
 style say_thought:
-    size 28
-    color "#9a6a8a"
+    size 26
+    color "#f0d8e8"
     italic True
     adjust_spacing False
 
@@ -575,7 +539,7 @@ style skip_button_text:
 
 style skip_triangle:
     size 18
-    color "#e8a0bf"
+    color "#c9748f"
 
 screen letterbox():
     zorder 90
@@ -660,7 +624,7 @@ screen quick_thought(text_str):
         xalign 0.5
         yalign 0.22
         padding (30, 14, 30, 14)
-        background Frame(Solid("#2a1a2299"), 30, 30, 30, 30)
+        background Frame(Solid("#0d000899"), 30, 30, 30, 30)
 
         hbox:
             spacing 10
@@ -670,7 +634,7 @@ screen quick_thought(text_str):
                 color "#c9748f"
             text "[text_str]":
                 size 24
-                color "#d0e0f0"
+                color "#f0d8e8"
                 italic True
                 yalign 0.5
             text "...":

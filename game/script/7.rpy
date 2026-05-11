@@ -89,30 +89,6 @@ label chapter_7:
 
     scene bg school at bg_fit with dissolve
 
-    show chunyeon at center_char with dissolve
-
-    thought "Chun-young was at the lake. Shoes off. Feet in the water."
-    thought "He always looked carefully placed. This was different. He just looked like a person."
-
-    chunyeon "The water's cold."
-    soo "I wasn't going to—"
-    chunyeon "You were thinking about it."
-    soo "Maybe."
-
-    thought "He moved over. I sat at the edge. Took my shoes off. Put my feet in."
-    thought "It was very cold."
-
-    soo "Okay. It's cold."
-    chunyeon "I told you."
-    soo "Why are you doing this?"
-    chunyeon "Because I wanted to feel something that wasn't expected of me."
-    soo "I think I know what you mean."
-    chunyeon "Yeah. I think you do."
-
-    hide chunyeon
-
-    scene bg school at bg_fit with dissolve
-
     show jihoquiet at center_char with dissolve
 
     thought "Ji-ho was at the overlook. Sketchbook open. Not drawing. Just looking."
@@ -182,7 +158,7 @@ label chapter_7:
 
     thought "I lay in the cabin that night thinking about all of them."
     thought "Jooin making room. Eunhyeong saying I like you like it was nothing."
-    thought "Chun-young with his feet in cold water. Ji-ho tilting the sketchbook away."
+    thought "Ji-ho tilting the sketchbook away."
     thought "Sara saying I missed you even when you were right there."
     thought "I've been so focused on not getting pulled in."
     thought "I didn't notice I already was."
@@ -193,24 +169,19 @@ label chapter_7:
         "Ji-ho. The way he tilted the sketchbook away.":
             $ route = "jiho"
             $ affection_jiho += 3
-            jump route_jiho_trip
-
-        "Chun-young. The way he said because I wanted to feel something real.":
-            $ route = "chunyeon"
-            $ affection_chunyeon += 3
-            jump route_chunyeon_trip
+            jump route_jiho_school
 
         "Eunhyeong. The way he said I like you like it cost him nothing.":
             $ route = "eunhyeong"
             $ affection_eunhyeong += 3
-            jump route_eunhyeong_trip
+            jump route_eunhyeong_school
 
         "Jooin. The way he made room without saying anything.":
             $ route = "woo"
             $ affection_woo += 3
-            jump route_woo_trip
+            jump route_woo_school
 
         "Sara. The way she said I missed you even when you were right there.":
             $ route = "sara"
             $ affection_sara += 3
-            jump route_sara_trip
+            jump route_sara_school

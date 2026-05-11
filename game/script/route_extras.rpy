@@ -6,6 +6,8 @@ label route_jiho_school:
     thought "He sat one seat closer in the library."
     thought "When I walked in he looked up. Not at the door. At me."
 
+    show jihoquiet at center_char with dissolve
+
     jiho "You're late."
     soo "By four minutes."
     jiho "I know."
@@ -28,31 +30,7 @@ label route_jiho_school:
     thought "But I was smiling. And so was he. Just barely."
     thought "Number eight."
 
-    scene black with dissolve
-    jump final_chapter
-
-
-label route_chunyeon_school:
-
-    scene bg school at bg_fit with dissolve
-
-    thought "Back at school."
-    thought "Chun-young was different in a way nobody else seemed to notice."
-    thought "Occasionally he'd catch my eye across the room."
-    thought "And for a second the performance would drop. Just for me."
-
-    chunyeon "You're staring again."
-    soo "You keep catching me."
-    chunyeon "I keep looking."
-    soo "That's new."
-    chunyeon "Is it?"
-    soo "You used to look through people."
-    chunyeon "..."
-    chunyeon "I still do."
-    chunyeon "Just not you."
-
-    thought "He said it simply. Like a fact he'd accepted."
-    thought "I just looked back. And let that be enough."
+    hide jihoquiet
 
     scene black with dissolve
     jump final_chapter
@@ -65,6 +43,8 @@ label route_eunhyeong_school:
     thought "Back at school."
     thought "Eunhyeong was still the same on the outside."
     thought "But sometimes he'd say something that was just for me. Not performed."
+
+    show eunhyeong at center_char with dissolve
 
     eunhyeong "Hey."
     soo "Hey."
@@ -82,6 +62,8 @@ label route_eunhyeong_school:
     thought "He smiled. The real one. In the middle of the hallway."
     thought "Not performing it. Just doing it."
 
+    hide eunhyeong
+
     scene black with dissolve
     jump final_chapter
 
@@ -93,6 +75,8 @@ label route_woo_school:
     thought "Back at school."
     thought "Jooin was still Jooin. Still watching everything."
     thought "But he'd started telling me things. Small things. Real things."
+
+    show woosmile at center_char with dissolve
 
     woo "I failed the history quiz."
     soo "I know. I saw your face."
@@ -115,6 +99,8 @@ label route_woo_school:
 
     thought "He said it like a promise. I believed him."
 
+    hide woosmile
+
     scene black with dissolve
     jump final_chapter
 
@@ -127,6 +113,8 @@ label route_sara_school:
     thought "Sara and I fell back into something."
     thought "Not what we were before. Something new."
     thought "Built on top of the old thing. Like Min-ho said."
+
+    show sarasmilequiet at center_char with dissolve
 
     sara "I saved you a seat."
     soo "I see that."
@@ -149,6 +137,8 @@ label route_sara_school:
     thought "The teacher started talking."
     thought "And for the first time in a long time I wasn't watching from a distance."
     thought "I was just here."
+
+    hide sarasmilequiet
 
     scene black with dissolve
     jump final_chapter

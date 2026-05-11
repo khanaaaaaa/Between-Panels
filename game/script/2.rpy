@@ -54,8 +54,7 @@ label chapter_one:
     npc2 "Min-ho's been coming to school in a limousine since elementary. Son of a major family."
     npc1 "Woo Ju-in's been his best friend since they were little. IQ over 200 apparently."
     npc2 "And Eunhyeong — class president before anyone even voted. Teachers love him."
-    npc2 "And then there's Yoo Chun-young. He models. Never talks to girls. Not once."
-    npc1 "So mysterious~"
+    npc2 "And then there's Yoo Eunhyeong. Class president before anyone even voted. Teachers love him."
 
     hide npcquiet
 

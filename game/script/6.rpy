@@ -50,31 +50,33 @@ label chapter_5:
     $ add_observation("Sara", "Three years ago I walked away and didn't turn around. She watched me go.")
 
     hide sarasmilequiet
-    show chunyeon at center_char with dissolve
+    show eunhyeong at center_char with dissolve
 
-    thought "A few days later Chun-young walked up to Sara's desk."
+    thought "A few days later Eunhyeong walked up to Sara's desk."
+    thought "Which was unusual. He was always the one people came to."
 
-    chunyeon "Do you know the answer to question six?"
+    eunhyeong "Do you know the answer to question six?"
 
-    hide chunyeon
+    hide eunhyeong
     show sarasmilequiet at center_char
 
     sara "Oh. It's the second law applied to the variable — here."
 
     hide sarasmilequiet
-    show chunyeon at center_char
+    show eunhyeong at center_char
 
-    chunyeon "Right."
+    eunhyeong "Right."
 
     thought "He smiled. Small and brief. Like it surprised him."
 
-    npc "Did Chun-young just smile?! At Sara?!"
+    npc "Did Eunhyeong just ask Sara for help?!"
+    npc "He never asks anyone for help!"
 
-    thought "He's warmer toward her than anyone else. Filed."
+    thought "He's warmer toward her than he lets on. Filed."
 
-    $ add_observation("Chun-young", "He smiled at Sara when she helped him. Small. Like it surprised him.")
+    $ add_observation("Eunhyeong", "He asked Sara for help and smiled when she answered. Like it surprised him.")
 
-    hide chunyeon
+    hide eunhyeong
     show yeomin at center_char with dissolve
 
     yeomin "Want to go to the shop after school?"

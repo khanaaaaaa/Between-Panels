@@ -4,28 +4,28 @@ label chapter_2_extras:
 
     show sooneutralquiet at center_char with dissolve
 
-    thought "Chun-young sat two seats ahead of me."
-    thought "He never turned around."
+    thought "Eunhyeong sat two seats ahead of me."
+    thought "He never seemed to be paying attention."
     thought "But I kept catching him looking at the board like he was somewhere else entirely."
 
     hide sooneutralquiet
     show eunhyeong at center_char with dissolve
 
-    chunyeon "Hey."
+    eunhyeong "Hey."
     soo "...Me?"
-    chunyeon "You were watching me just now."
+    eunhyeong "You were watching me just now."
     soo "I watch everyone."
-    chunyeon "..."
-    chunyeon "That's a strange thing to admit."
+    eunhyeong "..."
+    eunhyeong "That's a strange thing to admit."
     soo "Is it?"
-    chunyeon "Most people pretend they weren't."
+    eunhyeong "Most people pretend they weren't."
     soo "That seems exhausting."
-    chunyeon "..."
+    eunhyeong "..."
 
     thought "He turned back to the board. But he was almost smiling."
     thought "I filed that away."
 
-    $ add_observation("Chun-young", "He noticed me watching. Said most people pretend they weren't.")
+    $ add_observation("Eunhyeong", "He noticed me watching. Said most people pretend they weren't.")
 
     hide eunhyeong
 
