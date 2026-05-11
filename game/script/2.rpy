@@ -2,7 +2,7 @@ label chapter_one:
 
     scene bg class at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 1", "Everyone Is Suspiciously Good Looking")
+    call screen chapter_card("Chapter 1", "Everyone Is Suspiciously Good Looking")
 
     show teachertalking at center_charr with dissolve
 

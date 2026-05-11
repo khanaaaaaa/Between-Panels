@@ -2,7 +2,7 @@ label chapter_2:
 
     scene bg class at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 2", "I Was Going To Be Invisible")
+    call screen chapter_card("Chapter 2", "I Was Going To Be Invisible")
 
     show sooneutralquiet at center_char with dissolve
 

@@ -2,10 +2,11 @@ label prologue:
 
     scene bg room at bg_fit with dissolve
 
-    show screen chapter_card("Prologue", "Something Is Wrong With My Walls")
+    call screen chapter_card("Prologue", "Something Is Wrong With My Walls")
 
     thought "The morning of my middle school entrance ceremony and something was wrong."
-    thought "Shadows too sharp. Light too golden. Dust actually sparkling."
+    thought "Dust actually sparkling."
+    thought "WAIT WHA-"
     thought "DUST DOES NOT SPARKLE."
 
     show sooneutralquiet at center_char with dissolve

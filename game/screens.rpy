@@ -566,46 +566,52 @@ transform letterbox_in:
 
 screen chapter_card(number, title):
     zorder 150
+    modal True
 
-    frame:
+    button:
         xfill True
         yfill True
-        background Solid("#000000cc")
-        padding (0, 0, 0, 0)
+        action Return()
+        background Solid("#000000ee")
 
-    vbox:
-        xalign 0.5
-        yalign 0.5
-        spacing 16
-
-        text "[number]":
+        vbox:
             xalign 0.5
-            size 24
-            color "#c9748f"
-            italic True
+            yalign 0.5
+            spacing 20
 
-        frame:
-            xalign 0.5
-            xsize 400
-            ysize 2
-            background Solid("#c9748f")
-            padding (0, 0, 0, 0)
+            text "[number]":
+                xalign 0.5
+                size 24
+                color "#c9748f"
+                italic True
 
-        text "[title]":
-            xalign 0.5
-            size 44
-            color "#ffffff"
-            bold True
-            text_align 0.5
+            frame:
+                xalign 0.5
+                xsize 400
+                ysize 2
+                background Solid("#c9748f")
+                padding (0, 0, 0, 0)
 
-        frame:
-            xalign 0.5
-            xsize 400
-            ysize 2
-            background Solid("#c9748f")
-            padding (0, 0, 0, 0)
+            text "[title]":
+                xalign 0.5
+                size 44
+                color "#ffffff"
+                bold True
+                text_align 0.5
 
-    timer 2.5 action Hide("chapter_card")
+            frame:
+                xalign 0.5
+                xsize 400
+                ysize 2
+                background Solid("#c9748f")
+                padding (0, 0, 0, 0)
+
+            text "- click to continue -":
+                xalign 0.5
+                size 18
+                color "#c9748f88"
+                italic True
+                at delayed_blink(0.5, 1.2)
 
 transform chapter_card_anim:
     on show:

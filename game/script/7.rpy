@@ -2,7 +2,7 @@ label chapter_7:
 
     scene bg school at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 7", "The Moment Before Paths Split")
+    call screen chapter_card("Chapter 7", "The Moment Before Paths Split")
 
     show saraneutralquiet at center_char with dissolve
 

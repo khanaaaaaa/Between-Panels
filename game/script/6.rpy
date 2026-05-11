@@ -2,7 +2,7 @@ label chapter_5:
 
     scene bg class at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 5", "Something Already Slipping")
+    call screen chapter_card("Chapter 5", "Something Already Slipping")
 
     show sooneutralquiet at center_char with dissolve
 
@@ -277,7 +277,7 @@ label chapter_6:
 
     scene bg room at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 6", "Guilt Without Confrontation")
+    call screen chapter_card("Chapter 6", "Guilt Without Confrontation")
 
     show sooneutralquiet at center_char with dissolve
 

@@ -2,7 +2,7 @@ label final_chapter:
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show screen chapter_card("Final Chapter", "Presence")
+    call screen chapter_card("Final Chapter", "Presence")
 
     show sooneutralquiet at center_char with dissolve
 

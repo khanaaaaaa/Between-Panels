@@ -2,7 +2,7 @@ label chapter_4:
 
     scene bg school at bg_fit with dissolve
 
-    show screen chapter_card("Chapter 4", "The People Are Real")
+    call screen chapter_card("Chapter 4", "The People Are Real")
 
     show sarasmilequiet at center_char with dissolve
 
