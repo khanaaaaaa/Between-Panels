@@ -15,3 +15,6 @@ The game is structured across multiple script files — one per chapter — with
 
 ## What I Learnt And What I Struggled With
 The biggest struggle was keeping the UI readable across different scene backgrounds. The dialogue box went through several iterations before landing on a dark semi-transparent background with light text. Managing a branching script across multiple files also got complicated fast. Jump targets broke whenever a file got renamed or restructured.
+
+## Art Credits
+None of the art in the story belong to me. All credits to wawawa_o_o_ on X! Got all the assests from https://picrew.me/en/image_maker/2308695.
