@@ -44,12 +44,16 @@ image eunhyeongintear = "images/bbb/eunhyeongintear.png"
 
 image saraquiet = "images/BBG/saraquiet.png"
 image sarasmilequiet = "images/BBG/saraquiet.png"
+image saraneutralquiet = "images/BBG/saraquiet.png"
 image saratalking = "images/BBG/saratalking.png"
 image saraneutraltalk = "images/BBG/saratalking.png"
 image sarasmiletalk = "images/BBG/sarasmilingtalking.png"
 image saradisturbed = "images/BBG/saradisturbed.png"
 image saracrying = "images/BBG/saracrying.png"
 image saraintear = "images/BBG/saraintear.png"
+
+image wooquiet = "images/Blond hair blue eyed boy/wooquiet.png"
+image woosmiletalk = "images/Blond hair blue eyed boy/woosmiletalk.png"
 
 image teacherquiet = "images/teacherquiet.png"
 image teachertalking = "images/teachertalking.png"

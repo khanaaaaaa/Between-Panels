@@ -109,7 +109,7 @@ label ending_jiho:
     soo "You saved me a seat."
     jiho "..."
     hide jihoquiet
-    show jihotalking center_char
+    show jihotalking at center_char
     jiho "The view is better from here."
     hide jihotalking
     show jihoquiet at center_char
