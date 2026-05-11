@@ -5,7 +5,6 @@ label prologue:
     show screen chapter_card("Prologue", "Something Is Wrong With My Walls")
 
     thought "The morning of my middle school entrance ceremony and something was wrong."
-    thought "Not bad dream wrong. More like — the walls had texture that wasn't there yesterday."
     thought "Shadows too sharp. Light too golden. Dust actually sparkling."
     thought "DUST DOES NOT SPARKLE."
 
@@ -36,8 +35,7 @@ label prologue:
     scene bg hallway at bg_fit with dissolve
 
     thought "It was not fine."
-    thought "The hallway looked like the establishing shot of a romance drama. Cherry blossoms through the window. In March."
-    thought "CHERRY BLOSSOMS. IN MARCH."
+    thought "The hallway looked like the establishing shot of a romance drama."
 
     show sarasmilequiet at center_char with dissolve
 

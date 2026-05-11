@@ -40,12 +40,6 @@ define eunhyeong = Character(
     who_outlines=[(2, "#000", 0, 0)]
 )
 
-define yeomin = Character(
-    "Yeo-min",
-    color="#e8c8d8",
-    who_outlines=[(2, "#000", 0, 0)]
-)
-
 define teacher = Character(
     "Teacher",
     color="#d4b896",
@@ -78,9 +72,15 @@ define npc2 = Character(
 
 define thought = Character(
     what_italic=True,
-    what_color="#2a1a22",
+    what_color="#f0d8e8",
     what_prefix="(",
     what_suffix=")"
+)
+
+define narrator = Character(
+    "",
+    what_color="#f5e6f0",
+    what_size=30,
 )
 
 default route = None

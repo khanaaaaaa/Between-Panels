@@ -49,7 +49,7 @@ label chapter_one:
     hide sooneutralquiet
     show npcquiet at center_char with dissolve
 
-    npc1 "Hey — you came in with those three this morning, right? Do you know them?"
+    npc1 "Hey! you came in with those three this morning, right? Do you know them?"
     soo "No. We literally just met at the gate."
     npc2 "Min-ho's been coming to school in a limousine since elementary. Son of a major family."
     npc1 "Woo Ju-in's been his best friend since they were little. IQ over 200 apparently."
@@ -63,16 +63,16 @@ label chapter_one:
     thought "If this were a novel she'd be the protagonist. Which means I'm the side character."
     thought "Actually that's fine. Side characters go home at a normal time and eat dinner."
 
-    show npcquiet at center_char with dissolve
+    show sooneutralquiet at center_char with dissolve
 
     npc1 "What should we call those four? They're always together."
     npc2 "The Four Kings? The Four Stars?"
     npc1 "The Four Pillars!"
     npc2 "...That sounds like a construction company."
-    npc1 "Then — The Panel Kings? Like they belong in a manhwa panel?"
+    npc1 "Then, The Panel Kings? Like they belong in a manhwa panel?"
     npc2 "Actually that's perfect."
 
-    hide npcquiet
+    hide sooneutralquiet
 
     thought "The Panel Kings. I cannot believe I am living inside a story where that just happened."
 

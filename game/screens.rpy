@@ -114,7 +114,7 @@ screen phone_notification(sender, message):
             color "#ffffff"
             bold True
 
-        text "▸ ▸":
+        text "> >":
             xpos 220
             ypos 57
             size 10
@@ -136,7 +136,7 @@ screen phone_notification(sender, message):
             background Solid("#2a1a2e")
             padding (0, 0, 0, 0)
 
-        text "✉  Messages":
+        text "Messages":
             xpos 32
             ypos 93
             size 11
@@ -279,27 +279,22 @@ screen skip_indicator():
             spacing 10
             yalign 0.5
 
-            text "✿":
-                size 22
-                color "#c9748f"
-                at spin
-
             text _("skipping"):
                 size 22
                 color "#e8a0bf"
                 italic True
 
-            text "✿" at delayed_blink(0.0, 0.9):
+            text "..." at delayed_blink(0.0, 0.9):
                 size 18
                 color "#c9748f"
                 style "skip_triangle"
 
-            text "✿" at delayed_blink(0.2, 0.9):
+            text "..." at delayed_blink(0.2, 0.9):
                 size 18
                 color "#c9748f"
                 style "skip_triangle"
 
-            text "✿" at delayed_blink(0.4, 0.9):
+            text "..." at delayed_blink(0.4, 0.9):
                 size 18
                 color "#c9748f"
                 style "skip_triangle"
@@ -375,7 +370,7 @@ screen choice(items):
                     yalign 0.5
                     spacing 16
 
-                    text "✦":
+                    text "*":
                         size 16
                         color "#c9748f"
                         hover_color "#ffffff"
@@ -389,7 +384,7 @@ screen choice(items):
                         yalign 0.5
                         text_align 0.5
 
-                    text "✦":
+                    text "*":
                         size 16
                         color "#c9748f"
                         hover_color "#ffffff"
@@ -413,27 +408,11 @@ screen say(who, what):
 
     if who is None:
         frame at textbox_fadein:
-            xalign 0.02
-            yalign 0.15
-            xsize 680
-            padding (28, 18, 28, 18)
-            background Frame(Solid("#2a0a1ecc"), 16, 16, 16, 16)
-
-            text what id "what":
-                size 26
-                color "#f5d8e8"
-                italic True
-                xmaximum 620
-                line_spacing 8
-                outlines [(1, "#00000066", 0, 0)]
-
-    else:
-        frame at textbox_fadein:
             xalign 0.5
             yalign 1.0
             xfill True
-            ysize 220
-            padding (80, 35, 80, 35)
+            ysize 200
+            padding (0, 0, 0, 0)
             background Frame(Solid("#0d0008f0"), 0, 0, 0)
 
             frame:
@@ -445,19 +424,44 @@ screen say(who, what):
                 padding (0, 0, 0, 0)
 
             text what id "what":
-                xpos 30
-                ypos 40
+                xpos 40
+                yalign 0.5
                 xmaximum 1760
                 size 30
                 color "#f5e6f0"
                 line_spacing 10
                 adjust_spacing False
-                outlines [(2, "#00000088", 0, 0)]
+
+    else:
+        frame at textbox_fadein:
+            xalign 0.5
+            yalign 1.0
+            xfill True
+            ysize 200
+            padding (0, 0, 0, 0)
+            background Frame(Solid("#0d0008f0"), 0, 0, 0)
+
+            frame:
+                xsize 6
+                yfill True
+                xpos 0
+                ypos 0
+                background Solid("#c9748f")
+                padding (0, 0, 0, 0)
+
+            text what id "what":
+                xpos 40
+                yalign 0.5
+                xmaximum 1760
+                size 30
+                color "#f5e6f0"
+                line_spacing 10
+                adjust_spacing False
 
             frame at textbox_fadein:
                 xpos 70
                 yalign 1.0
-                yoffset -188
+                yoffset -168
                 xsize None
                 ysize None
                 padding (28, 10, 28, 10)
@@ -476,21 +480,21 @@ screen say(who, what):
         yalign 0.02
         spacing 8
 
-        textbutton "↩":
+        textbutton "<":
             action Rollback()
             padding (12, 8, 12, 8)
             background Frame(Solid("#3a1a2ecc"), 20, 20, 20, 20)
             hover_background Frame(Solid("#c9748f"), 20, 20, 20, 20)
             text_style "skip_button_text"
 
-        textbutton "✿ skip":
+        textbutton "skip >>":
             action Skip(fast=False, confirm=False)
             padding (16, 8, 16, 8)
             background Frame(Solid("#c9748fcc"), 20, 20, 20, 20)
             hover_background Frame(Solid("#e8a0bf"), 20, 20, 20, 20)
             text_style "skip_button_text"
 
-    textbutton "✦ notes":
+    textbutton "notes":
         action Show("notebook")
         xalign 0.02
         yalign 0.02
@@ -510,18 +514,17 @@ init python:
 
 
 style say_dialogue:
-    xpos 30
+    xpos 40
     xsize 1760
-    ypos 40
+    yalign 0.5
     size 30
     color "#f5e6f0"
     line_spacing 10
     adjust_spacing False
-    outlines [(2, "#00000088", 0, 0)]
 
 style say_thought:
-    size 26
-    color "#f0d8e8"
+    size 25
+    color "#fce8f4"
     italic True
     adjust_spacing False
 
@@ -602,12 +605,6 @@ screen chapter_card(number, title):
             background Solid("#c9748f")
             padding (0, 0, 0, 0)
 
-        text "✦":
-            xalign 0.5
-            size 24
-            color "#c9748f"
-            at spin
-
     timer 2.5 action Hide("chapter_card")
 
 transform chapter_card_anim:
@@ -624,7 +621,7 @@ screen quick_thought(text_str):
         xalign 0.5
         yalign 0.22
         padding (30, 14, 30, 14)
-        background Frame(Solid("#0d000899"), 30, 30, 30, 30)
+        background Frame(Solid("#5a1a3a99"), 30, 30, 30, 30)
 
         hbox:
             spacing 10
@@ -634,7 +631,7 @@ screen quick_thought(text_str):
                 color "#c9748f"
             text "[text_str]":
                 size 24
-                color "#f0d8e8"
+                color "#fce8f4"
                 italic True
                 yalign 0.5
             text "...":

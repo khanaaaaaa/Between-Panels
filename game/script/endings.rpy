@@ -57,10 +57,19 @@ label ending_jiho:
     thought "Sketchbook under his arm."
     thought "He looked up when he heard me."
 
+    hide jihoquiet
+    show jihotalking at center_char
+
     jiho "You're on time."
+    hide jihotalking
+    show jihoquiet at center_char
     soo "Don't sound so surprised."
     jiho "..."
+    hide jihoquiet
+    show jihotalking at center_char
     jiho "I'm not surprised."
+    hide jihotalking
+    show jihoquiet at center_char
 
     thought "He fell into step beside me."
     thought "We walked through the gate together."
@@ -92,10 +101,18 @@ label ending_jiho:
     thought "Right next to him."
 
     soo "..."
+    hide jihoquiet
+    show jihotalking at center_char
     jiho "Sit down."
+    hide jihotalking
+    show jihoquiet at center_char
     soo "You saved me a seat."
     jiho "..."
+    hide jihoquiet
+    show jihotalking center_char
     jiho "The view is better from here."
+    hide jihotalking
+    show jihoquiet at center_char
 
     thought "I sat down."
     thought "He opened his sketchbook."
@@ -119,25 +136,45 @@ label ending_eunhyeong:
 
     scene bg school_hallway at bg_fit with dissolve
 
-    show eunhyeong at center_char with dissolve
+    show eunhyeongquiet at center_char with dissolve
 
     thought "He found me in the hallway before the last bell."
     thought "Which was new."
     thought "Eunhyeong usually let people come to him."
 
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "Hey."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "Hey."
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "Last day."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "Last day."
     eunhyeong "..."
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "I've been thinking."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "About what?"
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "About next year."
     eunhyeong "About whether things will be different."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "Will they?"
     eunhyeong "..."
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "I think so."
     eunhyeong "I think I want them to be."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
 
     thought "He said it quietly."
     thought "Not performing it."
@@ -145,15 +182,21 @@ label ending_eunhyeong:
     thought "To me."
 
     soo "Different how?"
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "Less careful."
     eunhyeong "With you, at least."
     soo "..."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "I'd like that."
     eunhyeong "..."
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "Yeah."
     eunhyeong "Me too."
 
-    hide eunhyeong
+    hide eunhyeongtalk
 
     scene black with dissolve
 
@@ -165,23 +208,31 @@ label ending_eunhyeong:
 
     scene bg school at bg_fit with dissolve
 
-    show eunhyeong at center_char with dissolve
+    show eunhyeongquiet at center_char with dissolve
 
     thought "Second year. He still came to school early."
     thought "So did I."
     thought "We never talked about why."
 
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "You're here."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
     soo "So are you."
     eunhyeong "..."
+    hide eunhyeongquiet
+    show eunhyeongtalk at center_char
     eunhyeong "Yeah."
+    hide eunhyeongtalk
+    show eunhyeongquiet at center_char
 
     thought "He smiled."
     thought "The real one."
     thought "Before anyone else arrived."
     thought "Just for me."
 
-    hide eunhyeong
+    hide eunhyeongquiet
 
     scene black with dissolve
 
@@ -202,28 +253,54 @@ label ending_woo:
     thought "Leaning against the wall."
     thought "Not performing ease."
     thought "Just easy."
-
+    hide woosmile
+    show woosmiletalk at center_char
     woo "Hey."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "Hey."
+    hide woosmile
+    show woosmiletalk at center_char
     woo "Last day."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "Last day."
     woo "..."
+    hide woosmile
+    show woosmiletalk at center_char
     woo "Soo-ah."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "Mm?"
+    hide woosmile
+    show woosmiletalk at center_char
     woo "I figured something out."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "What?"
+    hide woosmile
+    show woosmiletalk at center_char
     woo "The version of me that doesn't perform."
     woo "I think I know what he's like now."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "Yeah?"
+    hide woosmile
+    show woosmiletalk at center_char
     woo "He's quieter."
     woo "He notices more."
     woo "He's kind of terrible at history quizzes."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "I know."
     woo "..."
+    hide woosmile
+    show woosmiletalk at center_char
     woo "He likes you."
     woo "A lot."
     woo "That part I'm sure about."
-
+    hide woosmiletalk
+    show woosmilequiet at center_char
     thought "He said it simply."
     thought "No deflection."
     thought "No joke after."
@@ -232,9 +309,11 @@ label ending_woo:
     soo "..."
     soo "I know that too."
     woo "..."
+    hide woosmilequiet
+    show woosmiletalk at center_char
     woo "Good."
 
-    hide woosmile
+    hide woosmiletalk
 
     scene black with dissolve
 
@@ -253,16 +332,26 @@ label ending_woo:
     thought "Same bench. Same quiet."
     thought "Different kind of comfortable."
 
+    hide woosmile
+    show woosmiletalk at center_char
     woo "You're smiling."
+    hide woosmiletalk
+    show woosmilequiet at center_char
     soo "I'm just sitting here."
+    hide woosmile
+    show woosmiletalk at center_char
     woo "You're smiling while sitting here."
     soo "..."
+    hide woosmiletalk
+    show woosmile at center_char
     soo "So are you."
     woo "..."
+    hide woosmile
+    show woosmiletalk at center_char
     woo "Yeah."
     woo "I noticed."
 
-    hide woosmile
+    hide woosmiletalk
 
     scene black with dissolve
 
@@ -287,8 +376,12 @@ label ending_sara:
     thought "She just handed one over."
 
     soo "You didn't have to—"
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "I know."
     sara "I wanted to."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
 
     thought "I took it."
     thought "We walked in together."
@@ -296,14 +389,26 @@ label ending_sara:
     thought "She stayed close."
     thought "I let her."
 
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "Soo-ah."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "Mm?"
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "I'm glad this year happened."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "Even the bad parts?"
     sara "..."
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "Especially the bad parts."
     sara "Because we got through them."
     sara "Together."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "..."
     soo "Yeah."
     soo "We did."
@@ -335,15 +440,18 @@ label ending_sara:
     thought "Like she'd been waiting."
     thought "Like she was glad I came."
 
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "You're on time."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "Don't make it weird."
+    hide sarasmilequiet
+    show sarasmiletalk at center_char
     sara "I'm making it weird."
+    hide sarasmiletalk
+    show sarasmilequiet at center_char
     soo "You're making it weird."
-
-    thought "She laughed."
-    thought "I sat down."
-    thought "It was easy."
-    thought "It was just easy."
 
     hide sarasmilequiet
 
