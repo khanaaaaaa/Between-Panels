@@ -11,7 +11,7 @@ I wanted to make something that felt like reading a manhwa but with actual playe
 **Tech Stack:**
 - Ren'Py
 
-The game is structured across multiple script files — one per chapter — with a shared characters and images file. The route system branches at chapter 7 based on a `route` variable set by the player's choice, with affection tracking running in the background throughout. The notebook screen pulls from `add_observation()` whenever Soo-ah notices something significant about a character.
+The route system branches at chapter 7 based on a `route` variable set by the player's choice, with affection tracking running in the background throughout. The notebook screen pulls from `add_observation()` whenever Soo-ah notices something significant about a character.
 
 ## What I Learnt And What I Struggled With
 The biggest struggle was keeping the UI readable across different scene backgrounds. The dialogue box went through several iterations before landing on a dark semi-transparent background with light text. Managing a branching script across multiple files also got complicated fast. Jump targets broke whenever a file got renamed or restructured.
